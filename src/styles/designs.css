@@ -1,0 +1,87 @@
+.designs {
+	background-color: #232323;
+	color: #fff;
+	padding: 10% 5%;
+}
+.ds1 {
+	text-align: center;
+}
+
+.dT1 {
+	font-family: Poppins;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 75px;
+	letter-spacing: 0em;
+	color: #ecdbcb;
+}
+.dT2 {
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 45px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #ffffff;
+}
+.dT11 {
+	margin-bottom: 5%;
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 45px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.cY{
+	width: 30%;
+}
+.cZ {
+	width: 100%;
+	/* height: 847px; */
+    margin: 5% 0 5% 0;
+}
+.btS {
+	background-color: #ffffff;
+	padding: 5%;
+}
+.dBtn {
+	background-color: #d4a80a;
+	width: 100%;
+	height: 113px;
+	top: 2352px;
+	left: 97px;
+	border-radius: 15px;
+	border: 0.5px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.btS2{
+    background-color: #232323;
+}
+.btS2 > h4{
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0em;
+}
+.btS2 > button{
+    width: 100%;
+    height: 96px;
+    border-radius: 15px;
+
+}
+.sImgCont{
+    height: 40rem;
+}
+.sImage {
+	width: 100%;
+    height: 100%;
+}

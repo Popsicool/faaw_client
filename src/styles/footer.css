@@ -1,0 +1,147 @@
+footer{
+    background-color: #ECDBCB;
+}
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    /* border-bottom:  2px solid #D4A80AB2; */
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+.fT{
+    width: 80%;
+}
+.fT > h5{
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.fT > p{
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input, input:focus, input:active, textarea, textarea:focus, textarea:active{
+    border: 1px solid #555555;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 90%;
+    height: 100%;
+    padding:0.5rem;
+    color: #000000;
+}
+input:focus, input:active{
+    border: solid 1px blue
+}
+.subBtn{
+    width: 173px;
+    height: 46px;
+    top: 8625px;
+    left: 844px;
+    border-radius: 10px;
+    background-color: #292D32;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #ffffff;
+}
+.footerBottomLeft > h3{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.footerBottomLeft > p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #606060;
+
+}
+.contDiver{
+    width: 150%;
+}
+.dividd{
+    color:#D4A80A;
+    border: none;
+    height: 50px;
+}
+.footerBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+.bM{
+    display: flex;
+}
+.bM2{
+    margin-top: 20%;
+}
+
+
+.sIc{
+    background-color: #EEEEEE;
+    border: 1px solid #D4A80A;
+    border-radius: 50%;
+    height: 30px;
+    margin-right: 10%;
+    width: 30px;
+    justify-content: center;
+}
+.sIc > img{
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+}
+.sameSize{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+.same2{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 275;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footerBottomRight > ul > a > li {
+    padding-bottom: 10%;
+}
+.copyright{
+    padding: 5%;
+}
+.bbb{
+    height: 50px;
+    background-color: #232323;
+    margin-top: -3%;
+}

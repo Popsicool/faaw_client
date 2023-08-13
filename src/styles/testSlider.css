@@ -1,0 +1,71 @@
+/* .slider-container {
+	background-color: #f0f0f0;
+} */
+
+/* Example CSS to style the slide items */
+.slide-item {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+/* Example CSS to style the navigation buttons */
+.slider-navigation {
+	background-color: #007bff;
+	color: red;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.indicate{
+    background-color: #D4A80A;
+    border: 1px solid #fff;
+    margin-top: 150%;
+}
+.slideContent, .slideList, .slideContainer, .slideHolder{
+	border: none;
+}
+.sImg{
+	display: none;
+}
+.prevButton, .nextButton{
+	color: #D4A80A;
+	background-color: #D4A80A;
+	/* display: none; */
+}
+/* .nextButton{
+	margin-right: 50%;
+} */
+.slideContent > div{
+	display: flex;
+	padding-left: 3%;
+	justify-content: center; /* Center horizontally */
+  	align-items: center;
+}
+.mainContainer{
+	background-color: #232323;
+	box-sizing: border-box;
+	margin-bottom: 10%;
+}
+
+.cZ2{
+	width: 90%;
+}
+.sImageCont{
+	height: 400px;
+}
+.sBt{
+	display: grid;
+	place-items: center;
+	background-color: #fff;
+	padding: 5%;
+}
+.sBs{
+	height: 70px;
+	width: 100%;
+	font-size: 20px;
+	background-color: #D4A80A;
+	border:  none;
+	border-radius: 15px;
+	color: green;
+}

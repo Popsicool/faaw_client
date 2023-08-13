@@ -1,0 +1,41 @@
+.collections{
+    background-color: #232323;
+    padding-bottom: 20%;
+}
+.colTop{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 517px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.colTitle{
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ECDBCB;
+}
+.colBottom{
+    margin: 3%;
+}
+.colCard{
+    margin-top: 10%;
+
+}
+.colCardTopImg{
+    width: 100%;
+}
+.colCardTop{
+    width: 100%;
+}
+.colCardBottom{
+    background-color: #ffffff;
+    padding: 5%;
+    width: 100%;
+}
