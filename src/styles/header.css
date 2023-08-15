@@ -1,3 +1,7 @@
+
+.headerCont{
+    position: relative;
+}
 .header1{
     background-color: #232323;
     color: #ffffff;
@@ -18,6 +22,7 @@
 .cBox{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 .cartBox{
     background: url(../assets/cart.png);
@@ -49,7 +54,7 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 10px 50px 0px 50px;
-    z-index: 1000;
+    z-index: 10000000000;
 }
 .sticky{
     position: fixed;

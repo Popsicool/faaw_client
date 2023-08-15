@@ -135,4 +135,22 @@ select option{
     height: 100%;
     border-radius: 15px;
 }
-
+.review{
+  padding: 1%
+}
+.reviewForm{
+  padding: 3%;
+  border: 1px solid #ECDBCBB0;
+}
+.submitBtn{
+  width: 90%;
+  background-color: #D4A80AB2;
+  margin-top: 5%;
+  font-size: large;
+  font-weight: 600;
+  padding: 2%;
+}
+.revlabel{
+  color: #D4A80A;
+  padding-bottom: 1%;
+}

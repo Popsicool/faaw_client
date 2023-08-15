@@ -7,7 +7,6 @@ import { Home } from './pages/Home';
 import { Collections } from './pages/Collections';
 import { AddToCart } from './pages/AddToCart';
 import cat1 from "./assets/cat1.png"
-import { Cart } from './pages/Cart';
 import { ScrollToTop } from './components/ScrollToTop';
 import 'react-toastify/dist/ReactToastify.css';
 import { NotFound } from './pages/NotFound';
@@ -51,7 +50,6 @@ function App() {
               <Route path='/' exact="true" element= {<Home/>}/>
               <Route path='/collections/:name' element= {<Collections/>}/>
               <Route path='/addToCart' element= {<AddToCart/>}/>
-              <Route path='/cart' element = {<Cart/>} />
               <Route path="*" element={<NotFound/>} />
             </Routes>
           </Layout>

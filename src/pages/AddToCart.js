@@ -14,6 +14,7 @@ export const AddToCart = () => {
     const [color, setColor] = useState(selected.color[0])
     const [number, setNumber] = useState(1)
     const [selectDivIdx, setSelectdividx] = useState(0)
+    const [showDescription, setShowDescription] = useState(false)
 
     const addItem = () => {
         selected.size_choice = size
@@ -105,6 +106,45 @@ export const AddToCart = () => {
                         <img src={mastercard} alt="mastercard"/>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className='row'>
+            <p><span onClick={() => setShowDescription(true)} >Description</span>    <span onClick={() => setShowDescription(false)}>Review(0)</span></p>
+            <hr/>
+            {showDescription ?
+            <div>
+                <p>
+                    What you get;
+                </p>
+                <p>
+                    {selected.description}
+                </p>
+            </div>
+            :
+            <div className='review'>
+                <p>Customer reviews</p>
+                <p>No reviews yet</p>
+                <div className='reviewForm'>
+                    <form>
+                        <label className='revlabel'>Your review*</label> <br/>
+                        <textarea
+                        rows={10}
+                        /> <br/>
+                        <label className='revlabel'>Name*</label> <br/>
+                        <input className='formIn'/> <br/>
+                        <label className='revlabel'>Email*</label> <br/>
+                        <input className='formIn'/> <br/>
+                        <button className='submitBtn'>
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+            }
+        </div>
+        <div className='row'>
+            <div>
+                <p>Related product</p>
             </div>
         </div>
     </div>
