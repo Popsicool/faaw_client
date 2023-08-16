@@ -16,7 +16,7 @@ export const CartPopup = (props) => {
     const rmv = (idx) => {
       deleteItem(idx)
       toast.success("Item removed from cart", {
-        position:"top-right"})
+        position:"bottom-right"})
     }
   return (
     <div className='cartOverlay'>

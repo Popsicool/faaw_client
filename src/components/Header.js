@@ -38,22 +38,22 @@ export const Header = () => {
                         <ul>
                             <NavLink to='/'>
                                 <li className='lks'>
-                                    Home    <i className='fa fa-angle-down'></i>
+                                    <p>Home</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
                             <NavLink to='/'>
                                 <li className='lks'>
-                                    Shop    <i className='fa fa-angle-down'></i>
+                                    <p>Shop</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
                             <NavLink to='/'>
                                 <li className='lks'>
-                                    About    <i className='fa fa-angle-down'></i>
+                                    <p>About</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
                             <NavLink to='/'>
                                 <li className='lks'>
-                                    Contact    <i className='fa fa-angle-down'></i>
+                                    <p>Contact</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
                         </ul>
@@ -62,7 +62,7 @@ export const Header = () => {
                 <div>
                     <div className='hd'>.</div>
                         <div className='cBox' onClick={() => setIsCartOpen(true)}>
-                            <p>#{price.toLocaleString()}.00</p>
+                            <p>&#8358;{price.toLocaleString()}.00</p>
                             <p className='cartBox'><span style={{fontSize:"1rem"}}>{cart.length}</span></p>
                         </div>
                 </div>

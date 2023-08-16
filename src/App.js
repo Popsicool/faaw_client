@@ -24,6 +24,7 @@ function App() {
                 description: "What you get; A kaftan top.A matching pants",
                 img: cat1,
                 stars:3,
+                cat: "Kaftans",
             },
   )
   const [cart, setCart] = useState(localStorage.getItem("FaawCart") ? JSON.parse(localStorage.getItem("FaawCart")) : []);
@@ -43,7 +44,7 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem}}>
-        <ToastContainer limit={1}/>
+        <ToastContainer toastClassName="custom-toast"/>
         <ScrollToTop>
           <Layout>
             <Routes>

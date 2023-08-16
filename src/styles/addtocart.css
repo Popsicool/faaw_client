@@ -1,3 +1,56 @@
+.cartTopRight{
+  padding: 0 5%;
+}
+.cartName{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cartPrice{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#E3D081
+}
+.cartAvailable{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ECDBCB;
+
+}
+.cartHurray{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EEEEEE;
+}
+.cartInstock{
+  color: #30BD57;
+  padding-left: 2%;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cartHr1{
+  color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+}
 .addtocart{
     background-color: #232323;
     color: #ffffff;
@@ -5,7 +58,9 @@
 }
 .cartImg{
     width: 100%;
-    height: 800px;
+    height: 855px;
+    border-radius: 15px;
+
 }
 .colorCircle{
     /* border: 1px solid #fff; */
@@ -20,11 +75,28 @@
   padding: 1px;
 }
 .selTag{
-    color: #D4A80A;
+    color: #E3D081;
 }
 
 .cls{
     display: flex;
+    color: #ECDBCB;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.selectionOption{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #3A3A3AA1;
 }
 
 select {
@@ -36,7 +108,18 @@ select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+  border-radius: 15px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
   padding: 3%;
+  /* background: url('../assets/dropdown.png') no-repeat right center;
+  background-color: #ffffff;
+  margin-right: 5%; */
+
 }
 
 select option{
@@ -58,43 +141,33 @@ select option{
   }
 .changNum{
     display: flex;
-    padding-top: 5%;
+    padding: 3% 0;
 }
   .plus, .num{
-    background-color: #BDBDBD;
+    background-color: #EEEEEE;
     color: #000;
     width:3rem;
     height: 32px;
-    border: 1px solid black;
+    border: 1px solid #BDBDBD;
     gap: 10px;
     text-align: center;
     cursor: pointer;
 
   }
   .num{
-    cursor:none
+    cursor:default;
   }
 .cartBtns{
-    width: 75%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-right: 15%;
+    padding-bottom: 3%;
 }
 .cartBtn{
-    background-color: #D4A80A;
-    font-family: Poppins;
-    font-size: 23px;
-    font-weight: 600;
-    line-height: 34px;
-    letter-spacing: 0em;
-
-    border: none;
-    width: 200px;
-    height: 70px;
-    top: 768px;
-    left: 762px;
-    border-radius: 32.42424392700195px;
-    gap: 16.212121963500977px;
-
+  padding: 2%;
+  margin-right: 3%;
+  border: none;
 }
 
 .addCartBottom{
@@ -115,7 +188,7 @@ select option{
     margin-top: -30px;
 }
 .guarantee{
-    z-index: 1000000;
+    z-index: 1000;
     text-align: center;
     position:static;
     justify-content: center;
@@ -135,22 +208,144 @@ select option{
     height: 100%;
     border-radius: 15px;
 }
+.dReview{
+  display: flex;
+}
+.rHr{
+  border-bottom: 1px solid #ECDBCB;
+  width: 100%;
+}
+.rv1{
+  border-bottom: 11px solid #ECDBCB;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-radius: 5px;
+}
+.rv2{
+  border-bottom: 1px solid #ECDBCB;
+  padding-bottom: 11px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+
+}
+.whatYouGet{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+
+}
+
+.dRv{
+  width: 300px;
+  display: grid;
+  place-items: center;
+}
 .review{
   padding: 1%
 }
 .reviewForm{
-  padding: 3%;
+  padding: 5% 3% ;
   border: 1px solid #ECDBCBB0;
+  border-radius: 15px;
 }
 .submitBtn{
-  width: 90%;
-  background-color: #D4A80AB2;
+  width: 80%;
+  background-color: #E3D081;
   margin-top: 5%;
-  font-size: large;
   font-weight: 600;
-  padding: 2%;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left: 10%;
+  border-radius: 15px;
 }
 .revlabel{
-  color: #D4A80A;
+  color: #E3D081;
   padding-bottom: 1%;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+}
+
+
+.formIn, .formIn:focus, .formIn:active, textarea, textarea:focus, textarea:active{
+    background: #D9D9D9;
+    border: 1px solid #555555;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    padding:0.5rem;
+    color: #000000;
+    font-size: 2rem;
+}
+textarea, textarea:focus, textarea:active{
+    height: 100%;
+}
+
+.colCd{
+  margin: 0;
+}
+
+
+
+.colCard2{
+  border: 1px solid #ECDBCBB0;
+  border-radius: 15px;
+  padding: 5%;
+  padding-top: 1.5%;
+}
+.colCardTop2{
+  height: 352px;
+}
+.colCardTopImg{
+  height: 100%;
+}
+.colCardBottom2{
+  border: none;
+  padding: 0;
+}
+.cusReview{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cusRev{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.relatedP{
+  padding-top: 5%;
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
 }

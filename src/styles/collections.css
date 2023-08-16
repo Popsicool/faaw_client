@@ -22,7 +22,7 @@
     color: #ECDBCB;
 }
 .colBottom{
-    margin: 3%;
+    padding: 10%;
 }
 .colCard{
     margin-top: 10%;
@@ -35,7 +35,40 @@
     width: 100%;
 }
 .colCardBottom{
-    background-color: #ffffff;
+    background-color: #232323;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     padding: 5%;
     width: 100%;
+}
+.colCardSet{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.colCardName{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.colCardPrice{
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E3D081B2;
+}
+.oldPrice{
+    color: #ffffff;
+}
+.dBtn2{
+    width: 80%;
 }

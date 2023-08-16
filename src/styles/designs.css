@@ -46,31 +46,26 @@
 	padding: 5%;
 }
 .dBtn {
-	background-color: #d4a80a;
+	background-color: #E3D081;
 	width: 100%;
-	height: 113px;
-	top: 2352px;
-	left: 97px;
 	border-radius: 15px;
-	border: 0.5px;
     font-family: Inter;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 0em;
     text-align: center;
-
+	padding: 5%;
+	border: 0.5px solid #D4A80A;
 }
 
 .btS2{
     background-color: #232323;
 }
-.btS2 > h4{
-    font-family: Inter;
-    font-size: 50px;
+.catName{
+    font-size: 2rem;
     font-weight: 500;
     line-height: 61px;
     letter-spacing: 0em;
+	color: #ECDBCB;
 }
 .btS2 > button{
     width: 100%;

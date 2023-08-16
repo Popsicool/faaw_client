@@ -16,20 +16,20 @@ export const Designs = () => {
                 <SliderTest/>
             </div>
         </div>
-        <div className='row designsMiddle gx-5'>
+        <div className='row designsMiddle gx-4'>
             <div className='ds1'>
-                <h2 className='dT1'>Shop by categories</h2>
-                <p className='dT11'>We want you to constantly present yourself elegantly</p>
+                <h2 className='dT1'>Shop by Categories</h2>
+                <p className='dT11'>We are confident that you will find something you like exploring by our categories</p>
             </div>
             {coldata.map((each, index) => (
-                <div className='col-md-6' key={index}>
+                <div className='col-md-3' key={index}>
                     <div className='cZ'>
                         <div className='sImgCont'>
                             <img src={each.img} alt={each.name} className='sImage'/>
                         </div>
-                        <div className='btS btS2'>
-                            <h4>{each.name}</h4>
-                            <Link to={`/collections/${each.name}`}><button className='dBtn'>Select Options</button></Link>
+                        <div className=''>
+                            <p className="catName">{each.name}</p>
+                            <Link to={`/collections/${each.name}`}><button className='dBtn'>View Options</button></Link>
                         </div>
                     </div>
                 </div>

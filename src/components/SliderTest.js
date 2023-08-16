@@ -14,7 +14,7 @@ const DummyCaption = (prop) => {
                   <div className='sImageCont'>
                     <img src={each.img} alt='p1' className='sImage'/>
                   </div>
-                    <div className='sBt'><Link to={`/collections/${each.name}`}><button className='sBs'> Shop the {each.name} Collection</button></Link> </div>
+                    <div><Link to={`/collections/${each.name}`}><button className='sBs'>{each.name} Collection</button></Link> </div>
                 </div>
             </div>
       ))}

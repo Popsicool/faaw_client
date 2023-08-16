@@ -1,4 +1,6 @@
-
+.fa-angle-down{
+    padding-left: 0%;
+}
 .headerCont{
     position: relative;
 }
@@ -54,7 +56,7 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 10px 50px 0px 50px;
-    z-index: 10000000000;
+    z-index: 10000;
 }
 .sticky{
     position: fixed;
@@ -91,11 +93,15 @@ nav > ul{
 .lks {
     font-family: Poppins;
     font-size: 18px;
+    display: flex;
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
+}
+.ic{
+    padding-left: 50%;
 }
 .navbarss{
     width: 50%;

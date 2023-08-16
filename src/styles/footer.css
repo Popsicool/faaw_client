@@ -4,10 +4,7 @@ footer{
 .footerTop{
     display: flex;
     justify-content: space-between;
-    padding: 5%;
-    /* border-bottom:  2px solid #D4A80AB2; */
-    margin-bottom: 5%;
-    padding-bottom: 5%;
+    padding: 5% 0 5% 5%;
     width: 100%;
 }
 .fT{
@@ -34,6 +31,9 @@ footer{
 .socialIcons{
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 75%;
 
 }
 
@@ -74,12 +74,12 @@ input:focus, input:active{
 }
 .footerBottomLeft > p{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
-    color: #606060;
+    color: #D4A80A;
 
 }
 .contDiver{
@@ -138,10 +138,10 @@ input:focus, input:active{
     padding-bottom: 10%;
 }
 .copyright{
-    padding: 5%;
+    padding: 3% 5% ;
 }
-.bbb{
+/* .bbb{
     height: 50px;
     background-color: #232323;
     margin-top: -3%;
-}
+} */

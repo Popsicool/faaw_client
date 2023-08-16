@@ -19,7 +19,7 @@
 	font-weight: 1000;
 	line-height: 75px;
 	letter-spacing: 0em;
-	padding-bottom: 15%;
+	padding-bottom: 5%;
 	color: #000000;
 }
 .testTxxt{
@@ -59,12 +59,10 @@
     color: #000000;
 }
 .rBtn{
-    background-color: #d4a80a;
-	width: 30%;
+    background-color: #E3D081B2;
+	width: 50%;
 	height: 100px;
     margin-top: 5%;
-	top: 2352px;
-	left: 97px;
 	border-radius: 15px;
 	border: 0.5px;
     font-family: Inter;
@@ -86,17 +84,15 @@
 
 .about {
 	display: flex;
-	/* height: 300px; */
 }
 .aboutText {
 	font-family: Poppins;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 400;
-	line-height: 60px;
+	line-height: 3rem;
 	letter-spacing: 0em;
 	text-align: left;
-	width: 50%;
-	padding: 10% 0;
+	padding: 5%;
 }
 .readMore {
 	font-family: Poppins;
@@ -110,4 +106,5 @@
 }
 .aboutPics {
 	width: 100%;
+	padding: 5%;
 }

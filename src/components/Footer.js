@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom"
-import fb from "../assets/fb.png"
+// import fb from "../assets/fb.png"
 import wa from "../assets/wa.png"
 import tw from "../assets/tw.png"
 import ins from "../assets/ins.png"
@@ -12,7 +12,7 @@ export const Footer = () => {
     <div>
       <footer>
         <div className='row footerTop'>
-          <div className='footerTopLeft col-md-7'>
+          <div className='col-md-7'>
             <div className='fT'>
               <h5>Subscribe to House of FAAW Blog Via Email</h5>
               <p>
@@ -20,9 +20,9 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-          <div className='footerTopRight col-md-5'>
+          <div className='col-md-5'>
             <form>
-              <div className='ipt'>
+              <div className=''>
                 <input
                 placeholder = 'Email address'
                 />
@@ -42,10 +42,26 @@ export const Footer = () => {
             <hr className='contDiver'/>
             <div>
               <ul className='socialIcons'>
-                <li><img src={fb}  alt="facebook"/></li>
-                <li><img src={tw}  alt="twitter"/></li>
-                <li><img src={ins}  alt="instagram"/></li>
-                <li><img src={wa}  alt="whatsapp"/></li>
+                {/* <li>
+                  <a href="https:fb.com" target="_blank" rel="noopener noreferrer">
+                    <img src={fb}  alt="facebook"/>
+                  </a>
+                </li> */}
+                <li>
+                  <a href="https://www.twitter.com/houseoffaaw" target="_blank" rel="noopener noreferrer">
+                    <img src={tw}  alt="twitter"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/houseoffaaw" target="_blank" rel="noopener noreferrer">
+                    <img src={ins}  alt="instagram"/>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/OTU3J7OQR5Q5M1" target="_blank" rel="noopener noreferrer">
+                    <img src={wa}  alt="instagram"/>
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -92,9 +108,9 @@ export const Footer = () => {
 
           </div>
         </div>
-        <p className='copyright'>© 2023 House of FAAW | Privacy Policy</p>
+        <p className='copyright'>© {new Date().getFullYear()} House of FAAW | Privacy Policy</p>
       </footer>
-      <div className='bbb'></div>
+      {/* <div className='bbb'></div> */}
     </div>
   )
 }

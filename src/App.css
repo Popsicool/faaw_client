@@ -2,7 +2,7 @@
 * { 
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 
 }
 body{
@@ -84,4 +84,8 @@ a:hover, .skill:hover {
 a:active {
   text-decoration: none;
   color: #D4A80A;
+}
+
+.custom-toast{
+  z-index: 1000000;
 }

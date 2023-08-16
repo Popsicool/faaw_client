@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, {useContext, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import collData from '../data/CollData'
 import "../styles/collections.css"
@@ -14,9 +14,16 @@ export const Collections = () => {
     const colItem = collData.find(obj => obj.name === name)
     const updateSelected = useContext(UserContext).updateSelected
     const addToCart = (props) => {
+      props.cat = name
       updateSelected(props)
       navigate("/addToCart",)
     }
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+            });
+    }, [])
 
   return (
     <div className="collections">
@@ -24,17 +31,17 @@ export const Collections = () => {
               <p className='colTitle'>{name}</p>
             </div>
             <div className='colBottom'>
-              <div className='row gx-4'>
+              <div className='row gx-5'>
                 {colItem.items.map((each, index) => (
                   <div className='col-md-4 colCard' key={index}>
                     <div className='colCardTop'>
                       <img className='colCardTopImg' src={each.img} alt="collImg"/>
                     </div>
                     <div className='colCardBottom'>
-                      <p>{colItem.name} set</p>
-                      <p>{each.name}</p>
-                      <p>
-                      {each.old_price && <s>&#8358;{each.old_price}</s>}  &#8358;{each.new_price}
+                      <p className='colCardSet'>{colItem.name} set</p>
+                      <p className='colCardName'>{each.name}</p>
+                      <p className='colCardPrice'>
+                      {each.old_price && <s className='oldPrice'>&#8358;{each.old_price}</s>}  &#8358;{each.new_price}
                       </p>
                       <p>
                         {Array.from({ length: each.stars }).map((_, index) => (
@@ -52,7 +59,7 @@ export const Collections = () => {
                           />
                         ))}
                       </p>
-                      <p><button className='btS' onClick={() => addToCart(each)}>Select Options</button></p>
+                      <p><button className='dBtn dBtn2' onClick={() => addToCart(each)}>Select Options</button></p>
                     </div>
                   </div>
                 ))}
