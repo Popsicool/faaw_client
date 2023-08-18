@@ -125,6 +125,10 @@ input:focus, input:active{
     letter-spacing: 0em;
     text-align: left;
 }
+.sameSize:visited {
+  text-decoration: none;
+  color:#000000
+}
 .same2{
     font-family: Poppins;
     font-size: 12px;
