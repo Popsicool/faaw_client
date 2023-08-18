@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
         <Header/>
         <div>{ children }</div>
         <Footer/>
-        {/* <StickyNavigation/> */}
+        <StickyNavigation/>
       </div>
     </>
   )
