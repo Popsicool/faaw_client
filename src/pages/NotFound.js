@@ -5,8 +5,8 @@ import "../styles/notfound.css"
 export const NotFound = () => {
   return (
     <div className='notFound'>
-        <div>Werey, Watin you find come here??</div>
-        <div><Link to='/'><button className='btS'>Fuck off and Go home</button></Link></div>
+        <div>Comrade Relax, I never code this page abegiiii </div>
+        <div><Link to='/'><button className='btS'>Go home</button></Link></div>
     </div>
   )
 }

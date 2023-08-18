@@ -39,16 +39,16 @@ const styldata = [
         "name": "Trousers",
         "img": trouser,
     },
-    // {
-    //     "id": 7,
-    //     "name": "Trousers",
-    //     "img": trouser,
-    // },
-    // {
-    //     "id": 7,
-    //     "name": "Trousers",
-    //     "img": trouser,
-    // },
+    {
+        "id": 7,
+        "name": "Trousers",
+        "img": trouser,
+    },
+    {
+        "id": 7,
+        "name": "Trousers",
+        "img": trouser,
+    },
 ]
 
 export default styldata;

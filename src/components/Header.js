@@ -26,7 +26,7 @@ export const Header = () => {
             <div className='header2'>
                 <div>
                     <NavLink to='/'>
-                        <div className='faawlogo'>
+                        <div className='faawlogo hoF'>
                             <img src={faaw} alt='faaw logo'/>
                         </div>
                         <p className='hoF'>House of <span>FAAW</span></p>
@@ -41,17 +41,17 @@ export const Header = () => {
                                     <p>Home</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
-                            <NavLink to='/'>
+                            <NavLink to='/shop'>
                                 <li className='lks'>
                                     <p>Shop</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
-                            <NavLink to='/'>
+                            <NavLink to='/about'>
                                 <li className='lks'>
                                     <p>About</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>
                             </NavLink>
-                            <NavLink to='/'>
+                            <NavLink to='/contact'>
                                 <li className='lks'>
                                     <p>Contact</p><p className='ic'><i className='fa fa-angle-down'></i></p>
                                 </li>

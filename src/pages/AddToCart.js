@@ -17,7 +17,8 @@ export const AddToCart = () => {
     const [selectDivIdx, setSelectdividx] = useState(0)
     const [showDescription, setShowDescription] = useState(false)
     const colItem = collData.find(obj => obj.name === selected.cat)
-    const catitems = colItem.items
+    // const catitems = colItem.items
+    const catitems = colItem.items.filter((obj) => obj.name !== selected.name);
     const updateSelected = useContext(UserContext).updateSelected
     let selectedItems;
     if (catitems.length >= 3) {

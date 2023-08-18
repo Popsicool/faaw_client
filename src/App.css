@@ -8,45 +8,24 @@
 body{
   min-height: 100vh;
 }
-.container{
+/* .container{
   min-height: 100vh;
-}
+} */
 
-.App {
-  font-family: 'Poppins', sans-serif;
-  /* background-color: #222222;
-  color: #ffffff; */
+/* .App {
   min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -56,17 +35,12 @@ body{
     transform: rotate(360deg);
   }
 }
-/* ul{
-  display: flex;
-  justify-content: space-between;
-} */
 li{
     list-style-type: none;
 }
 
 a:link {
   text-decoration: none;
-  /* color:red */
 }
 
 a:visited {
@@ -81,11 +55,16 @@ a:hover, .skill:hover {
   font-weight: bolder;
 }
 
-a:active {
+/* a:active {
   text-decoration: none;
-  color: #D4A80A;
-}
+  color: #D4A80A !important;
+    font-size: 100px;
+} */
 
 .custom-toast{
   z-index: 1000000;
+}
+button:hover{
+  background-color: #ECDBCB;
+  color: #000000;
 }

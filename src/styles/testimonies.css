@@ -19,7 +19,6 @@
 	font-weight: 1000;
 	line-height: 75px;
 	letter-spacing: 0em;
-	padding-bottom: 5%;
 	color: #000000;
 }
 .testTxxt{
@@ -48,7 +47,7 @@
 }
 .aboutOut {
 	background-color: #ecdbcb;
-	padding: 10% 5%;
+	padding: 5%;
 	color: #000000;
 }
 .revCont{
