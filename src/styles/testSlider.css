@@ -18,19 +18,19 @@
 }
 
 .indicate{
-    background-color: #D4A80A;
+    background-color: #D4A80A !important;
     border: 1px solid #fff;
     margin-top: 150%;
 }
 .slideContent, .slideList, .slideContainer, .slideHolder{
-	border: none;
+	border: none !important;
 }
 .sImg{
 	display: none;
 }
 .prevButton, .nextButton{
-	color: #D4A80A;
-	background-color: #D4A80A;
+	color: #D4A80A !important;
+	background-color: #D4A80A !important;
 	/* display: none; */
 }
 /* .nextButton{
