@@ -103,6 +103,14 @@ nav > ul{
 .lks:hover, .sameSize:hover, .cBox:hover, .hoF:hover{
     font-weight: bolder;
 }
+a:link {
+  text-decoration: none;
+}
+
+.lks:visited {
+  text-decoration: none;
+  color:#000000
+}
 a.active {
   text-decoration: none;
   color: #D4A80A !important;
