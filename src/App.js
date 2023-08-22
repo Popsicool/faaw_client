@@ -10,6 +10,7 @@ import cat1 from "./assets/cat1.png"
 import { ScrollToTop } from './components/ScrollToTop';
 import 'react-toastify/dist/ReactToastify.css';
 import { NotFound } from './pages/NotFound';
+import { CartPopup } from './components/CartPopup';
 
 export const UserContext = createContext()
 function App() {
@@ -51,6 +52,7 @@ function App() {
               <Route path='/' exact="true" element= {<Home/>}/>
               <Route path='/collections/:name' element= {<Collections/>}/>
               <Route path='/addToCart' element= {<AddToCart/>}/>
+              <Route path='/cart' element={<CartPopup/>}/>
               <Route path="*" element={<NotFound/>} />
             </Routes>
           </Layout>

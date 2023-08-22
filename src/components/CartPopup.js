@@ -2,11 +2,11 @@ import React, {useContext} from 'react'
 import { UserContext } from '../App'
 import { toast } from 'react-toastify';
 import "../styles/cart.css"
-import times from "../assets/times.png"
+// import times from "../assets/times.png"
 import times2 from "../assets/times2.png"
 
 export const CartPopup = (props) => {
-    const handleClick = props.handleClick
+    // const handleClick = props.handleClick
     const cart = useContext(UserContext).cart
     const deleteItem = useContext(UserContext).deleteItem
     let price = 0;
@@ -23,7 +23,7 @@ export const CartPopup = (props) => {
         <div className='cart'>
             <div className='shoppingCartDiv'>
                 <p className='shoppingCartText'>Shopping Cart</p>
-                <p className='times' onClick={() => handleClick(false)} ><img src={times} alt='times'/></p>
+                {/* <p className='times' onClick={() => handleClick(false)} ><img src={times} alt='times'/></p> */}
             </div>
             <hr/>
             <div>
@@ -65,7 +65,7 @@ export const CartPopup = (props) => {
             <div className='noItem'>
                 <p className='noItm'>No product in the cart.</p>
                 <div className='cartBoxCtn'>
-                    <button className='noItemBtn' onClick={() => handleClick(false)} >Continue Shopping</button>
+                    <button className='noItemBtn'>Continue Shopping</button>
                 </div>
             </div>
                 }

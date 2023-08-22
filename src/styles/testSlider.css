@@ -24,6 +24,7 @@
 }
 .slideContent, .slideList, .slideContainer, .slideHolder{
 	border: none !important;
+	z-index: -100 !important;
 }
 .sImg{
 	display: none;
