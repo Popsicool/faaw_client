@@ -41,7 +41,7 @@ export const AddToCart = () => {
         selected.quantity_choice = number
         updateCart(selected)
         toast.success("Item Added to cart", {
-        position:"top-right"})
+        position:"bottom-right"})
     }
     const updateNum = (a) => {
         if (a === "+"){
