@@ -1,4 +1,4 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, {useContext, useState} from 'react'
 import { UserContext } from '../App'
 import { toast } from 'react-toastify';
 import star from "../assets/stars.png"
@@ -34,12 +34,7 @@ export const AddToCart = () => {
         behavior: 'smooth'
         });
     }
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-            });
-    }, [])
+
     const addItem = () => {
         selected.size_choice = size
         selected.color_choice = color

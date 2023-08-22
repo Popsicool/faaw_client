@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import collData from '../data/CollData'
 import "../styles/collections.css"
@@ -18,12 +18,6 @@ export const Collections = () => {
       updateSelected(props)
       navigate("/addToCart",)
     }
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-            });
-    }, [])
 
   return (
     <div className="collections">
