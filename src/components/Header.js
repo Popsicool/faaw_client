@@ -27,7 +27,7 @@ export const Header = () => {
                             <div className='faawlogo hoF'>
                                 <img src={faaw} alt='faaw logo'/>
                             </div>
-                            <p className='hoF'>House of <span>FAAW</span></p>
+                            <p className='hoF'>House of <strong>FAAW</strong></p>
                         </NavLink>
                     </div>
                     <div className='navbarss'>

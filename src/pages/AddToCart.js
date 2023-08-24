@@ -11,7 +11,7 @@ import collData from '../data/CollData'
 export const AddToCart = () => {
     const selected = useContext(UserContext).selected
     const updateCart = useContext(UserContext).updateCart
-    const [size, setSize] = useState("")
+    const [size, setSize] = useState(selected.size[0])
     const [color, setColor] = useState(selected.color[0])
     const [number, setNumber] = useState(1)
     const [selectDivIdx, setSelectdividx] = useState(0)
@@ -92,10 +92,12 @@ export const AddToCart = () => {
                     </div>
                     <p className='cls' style={{color:"#FFFFFF"}}>Size :</p>
                     <div className="custom-select">
-                        <select onChange={(e) => setSize(e.target.value)}>
+                        <select onChange={(e) => {
+                            setSize(e.target.value)
+                        }} value={size}>
                             <option className='selectionOption'>Choose an option</option>
                             {selected.size.map((each, index) => (
-                                <option className='selectionOption' value={each} key={index}>{each}</option>
+                                <option className='selectionOption' defaultValue={index === 0} value={each} key={index}>{each}</option>
                             ))}
                         </select>
                     </div>
@@ -145,7 +147,7 @@ export const AddToCart = () => {
                 <div className='reviewForm'>
                     <form>
                         <label className='revlabel'>Your review*</label> <br/>
-                        <textarea
+                        <textarea className='formTextArea'
                         rows={5}
                         /> <br/>
                         <label className='revlabel'>Name*</label> <br/>

@@ -10,7 +10,7 @@ import cat1 from "./assets/cat1.png"
 import { ScrollToTop } from './components/ScrollToTop';
 import 'react-toastify/dist/ReactToastify.css';
 import { NotFound } from './pages/NotFound';
-import { CartPopup } from './components/CartPopup';
+import { Cart } from './pages/Cart';
 
 export const UserContext = createContext()
 function App() {
@@ -36,6 +36,7 @@ function App() {
     setCart(cart.filter((item, index) => index !== props))
   }
   const updateSelected = (prop) => {
+
     setSelected(prop)
   }
   useEffect(() => {
@@ -52,7 +53,7 @@ function App() {
               <Route path='/' exact="true" element= {<Home/>}/>
               <Route path='/collections/:name' element= {<Collections/>}/>
               <Route path='/addToCart' element= {<AddToCart/>}/>
-              <Route path='/cart' element={<CartPopup/>}/>
+              <Route path='/cart' element={<Cart/>}/>
               <Route path="*" element={<NotFound/>} />
             </Routes>
           </Layout>
