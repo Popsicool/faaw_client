@@ -94,11 +94,11 @@ export const Footer = () => {
                   Shop
                 </li>
               </NavLink>
-              <p to='#'>
+              <NavLink to='/cart'>
                 <li className='sameSize'>
                   Cart
                 </li>
-              </p>
+              </NavLink>
               <NavLink to='/shop'>
                 <li className='sameSize'>
                   General business policy
