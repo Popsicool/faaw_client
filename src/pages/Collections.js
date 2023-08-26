@@ -16,20 +16,22 @@ export const Collections = () => {
     const addToCart = (props) => {
       props.cat = name
       updateSelected(props)
-      navigate("/addToCart",)
+      navigate("/addToCart")
     }
 
   return (
     <div className="collections">
             <div className='colTop' style={{backgroundImage: `url(${colItem.img})`}}>
+            <div className='heroChild'>
               <p className='colTitle'>{name}</p>
+            </div>
             </div>
             <div className='colBottom'>
               <div className='row gx-5'>
                 {colItem.items.map((each, index) => (
                   <div className='col-md-4 colCard' key={index}>
                     <div className='colCardTop'>
-                      <img className='colCardTopImg' src={each.img} alt="collImg"/>
+                      <img className='colCardTopImg' src={each.img[0]} alt="collImg"/>
                     </div>
                     <div className='colCardBottom'>
                       <p className='colCardSet'>{colItem.name} set</p>

@@ -10,8 +10,7 @@ function StickyNavigation() {
       } else {
         nav.classList.remove('sticky');
       }
-    };
-
+    }
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

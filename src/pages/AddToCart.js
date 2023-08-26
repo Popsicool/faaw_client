@@ -17,9 +17,19 @@ export const AddToCart = () => {
     const [selectDivIdx, setSelectdividx] = useState(0)
     const [showDescription, setShowDescription] = useState(false)
     const colItem = collData.find(obj => obj.name === selected.cat)
-    // const catitems = colItem.items
     const catitems = colItem.items.filter((obj) => obj.name !== selected.name);
     const updateSelected = useContext(UserContext).updateSelected
+    const images = selected.img
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const onNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const onPrevClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
     let selectedItems;
     if (catitems.length >= 3) {
     selectedItems = catitems.slice(0, 3); // Select the first three items
@@ -58,8 +68,11 @@ export const AddToCart = () => {
   return (
     <div className='addtocart'>
         <div className='row'>
-            <div className='col-md-6'>
-                <img className='cartImg' src={selected.img} alt="selcted item"/>
+            <div className='col-md-6 conTop'>
+                <img className='cartImg' src={images[currentIndex]} alt="selcted item"/>
+                <div className='leftRight'>
+                    <button onClick={onPrevClick} className='gtlT'>&lt;</button> <button onClick={onNextClick} className='gtlT'>&gt;</button>
+                </div>
             </div>
             <div className='col-md-6 cartTopRight'>
                 <div>
@@ -113,12 +126,16 @@ export const AddToCart = () => {
         </div>
         <div className='row'>
             <div className='col-md-6 g-x-3 addCartBottom'>
+                {images.length > 1 &&
                 <div className='imgWap'>
-                    <img src={selected.img} alt="item"/>
+                    <img src={images[1]} alt="item"/>
                 </div>
+                }
+                {images.length > 2 &&
                 <div className='imgWap'>
-                    <img src={selected.img} alt="item"/>
+                    <img src={images[2]} alt="item"/>
                 </div>
+                }
             </div>
             <div className='col-md-6 btRight'>
                     <div className='guarantee'><p className='guara'>Guaranteed Safe checkout</p></div>
@@ -170,7 +187,7 @@ export const AddToCart = () => {
                         <div className='col-md-4 colCard colCd' key={idx}>
                             <div className='colCard2'>
                                 <div className='colCardTop colCardTop2'>
-                                <img className='colCardTopImg colCardTopImg2' src={each.img} alt="collImg"/>
+                                <img className='colCardTopImg colCardTopImg2' src={each.img[0]} alt="collImg"/>
                                 </div>
                                 <div className='colCardBottom colCardBottom2'>
                                 <p className='colCardSet'>{colItem.name} set</p>

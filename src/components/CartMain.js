@@ -24,7 +24,7 @@ export const CartMain = (props) => {
                     <div className='itemRow'>
                         <div className='itemRowCol1'>
                             <div className='itemImgCont'>
-                                <img className='itemImg' src={each.img} alt="item pics" />
+                                <img className='itemImg' src={each.img[0]} alt="item pics" />
                             </div>
                             <div className='itemRowText'>
                                 <p className='itemRT1'>Two piece set</p>

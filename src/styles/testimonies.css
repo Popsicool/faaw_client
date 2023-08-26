@@ -102,14 +102,18 @@
 	padding: 5%;
 }
 .readMore {
-	font-family: Poppins;
-	font-size: 20px;
-	font-weight: 600;
-	line-height: 30px;
-	letter-spacing: 0em;
-	text-align: left;
-	color: #3a3a3af5;
-	cursor: pointer;
+	width: 25rem;
+	height: 6rem;
+	top: 4406px;
+	left: 181px;
+	border-radius: 15px;
+	background-color: #3A3A3A;
+	border: 1px solid #E3D081;
+	color: #E3D081;
+	border: 3px;
+}
+.readMore:hover{
+	border: 1px solid #3A3A3A;
 }
 .aboutPics {
 	width: 100%;

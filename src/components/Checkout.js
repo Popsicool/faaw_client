@@ -67,15 +67,15 @@ export const Checkout = (props) => {
                         <div className='col-md-6'>
                             <label className="lbl">First name*</label><br/>
                             <input
-                            className='checkoutInput'
+                            className='checkoutInput fAl'
                             value={firstname}
                             onChange={(e) => setFirstName(e.target.value)}
                             /><br/>
                         </div>
-                        <div className='col-md-6'>
-                            <label className="lbl">Last name*</label><br/>
+                        <div className='col-md-6 lN'>
+                            <label className="lbl lNT">Last name*</label><br/>
                             <input
-                            className='checkoutInput'
+                            className='checkoutInput fAl'
                             value={lastname}
                             onChange={(e) => setLastName(e.target.value)}
                             /><br/>

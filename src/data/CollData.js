@@ -10,13 +10,13 @@ const collData = [
         items:[
             {
                 name: "The african child set (Green)",
-                old_price: 40000,
+                old_price: 90000,
                 new_price: 35000,
                 quantity: 35,
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -26,7 +26,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -37,7 +37,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat1, cat2],
                 stars:5,
             },
             {
@@ -48,7 +48,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -58,7 +58,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat2, cat3],
                 stars:3,
             },
             {
@@ -68,7 +68,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat3],
                 stars:5,
             },
             {
@@ -79,7 +79,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -90,7 +90,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat3],
                 stars:5,
             },
             {
@@ -101,7 +101,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
         ]
@@ -119,7 +119,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -130,7 +130,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:5,
             },
             {
@@ -141,21 +141,21 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:4,
             },
             {
                 name: "Love set (Lilac)",
                 old_price: 40000,
                 new_price: 35000,
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:5,
             },
             {
                 name: "Intelligence set (Ivory)",
                 old_price: 40000,
                 new_price: 35000,
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -166,7 +166,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -177,7 +177,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:3,
             },
             {
@@ -188,7 +188,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:5,
             },
             {
@@ -199,7 +199,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:4,
             },
         ]
@@ -217,7 +217,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:5,
             },
             {
@@ -228,7 +228,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -239,7 +239,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:3,
             },
             {
@@ -250,7 +250,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:5,
             },
             {
@@ -261,7 +261,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -272,7 +272,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -283,7 +283,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:5,
             },
             {
@@ -294,7 +294,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -305,7 +305,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:5,
             },
         ]
@@ -323,7 +323,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -334,7 +334,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -345,7 +345,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:5,
             },
             {
@@ -356,7 +356,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:3,
             },
             {
@@ -367,7 +367,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -378,7 +378,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:4,
             },
             {
@@ -389,7 +389,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat2,
+                img: [cat2, cat1, cat3],
                 stars:5,
             },
             {
@@ -400,7 +400,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat1,
+                img: [cat1, cat2, cat3],
                 stars:3,
             },
             {
@@ -411,7 +411,7 @@ const collData = [
                 color: ['blue', 'red', 'black'],
                 size:['S', 'M', 'L', 'XL', 'XXL', 'XXXL'],
                 description: "What you get; A kaftan top.A matching pants",
-                img: cat3,
+                img: [cat3, cat2, cat1],
                 stars:4,
             },
         ]

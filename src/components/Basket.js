@@ -28,7 +28,7 @@ export const Basket = (props) => {
                                         <div className='tableR'>
                                             <div className='itemImgCont itemImgCont2'>
                                             <p className='deleteItem pad tX'><img className='times' onClick={() => rmv(idx)} src={times2} alt="times" /></p>
-                                                <img className='itemImg' src={each.img} alt="item"/>
+                                                <img className='itemImg' src={each.img[0]} alt="item"/>
                                             </div>
                                             <div>
                                                 <p className='tableP'>{each.name}</p>

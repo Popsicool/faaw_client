@@ -13,8 +13,9 @@ export const About = () => {
                         House of FAAW is a fashion brand born of the need of mature stylish and functional clothing for men.
                     </p>
                     <p>
-                        We offer products that are just the right fit for you. our pieces are made with the choosiest of materials and the nearest tailoring <span className='readMore'>Read More....</span>
+                        We offer products that are just the right fit for you. our pieces are made with the choosiest of materials and the nearest tailoring
                     </p>
+                    <p><button className='readMore'>Read More</button></p>
 
                 </div>
                 <div className='col-md-4'>
