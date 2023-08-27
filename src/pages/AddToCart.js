@@ -46,10 +46,11 @@ export const AddToCart = () => {
     }
 
     const addItem = () => {
-        selected.size_choice = size
-        selected.color_choice = color
-        selected.quantity_choice = number
-        updateCart(selected)
+        const chosen = {...selected}
+        chosen.size_choice = size
+        chosen.color_choice = color
+        chosen.quantity_choice = number
+        updateCart(chosen)
         toast.success("Item Added to cart", {
         position:"bottom-right"})
     }
