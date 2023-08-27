@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import { useParams } from 'react-router-dom'
-import collData from '../data/CollData'
 import "../styles/collections.css"
 import star from "../assets/stars.png"
 import star1 from "../assets/stars1.png"
@@ -9,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 export const Collections = () => {
+    const collData = useContext(UserContext).cdata
     const navigate = useNavigate()
     const { name } = useParams()
     const colItem = collData.find(obj => obj.name === name)

@@ -4,11 +4,11 @@ import { NavLink, Link } from "react-router-dom"
 import faaw from '../assets/faaw.png'
 import location from "../assets/location.png"
 import { UserContext } from '../App'
-import coldata from "../data/CollData"
 
 
 export const Header = () => {
     const cart = useContext(UserContext).cart
+    const coldata = useContext(UserContext).cdata
     const [showShop, setShowShop] = useState(false)
     let price = 0;
     cart.forEach(element => {
@@ -55,7 +55,7 @@ export const Header = () => {
                                                 <li className='ddbl'>Product Categories</li>
                                             </ol>
                                             <ul>
-                                                {coldata.map((each, idx) => (
+                                                {coldata?.map((each, idx) => (
                                                     <Link to={`/collections/${each.name}`} key={idx}>
                                                         <li className='ddsl' key={idx}>{each.name}</li>
                                                     </Link>

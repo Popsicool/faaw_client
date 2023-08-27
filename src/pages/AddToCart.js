@@ -6,10 +6,11 @@ import star1 from "../assets/stars1.png"
 import check from "../assets/check.png"
 import "../styles/addtocart.css"
 import mastercard from "../assets/mastercard.png"
-import collData from '../data/CollData'
+
 
 export const AddToCart = () => {
     const selected = useContext(UserContext).selected
+    const collData = useContext(UserContext).cdata
     const updateCart = useContext(UserContext).updateCart
     const [size, setSize] = useState(selected.size[0])
     const [color, setColor] = useState(selected.color[0])

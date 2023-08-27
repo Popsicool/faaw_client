@@ -12,6 +12,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { NotFound } from './pages/NotFound';
 import { Cart } from './pages/Cart';
 import { Checkselected } from './components/CheckSelected';
+import coldata from "./data/CollData"
+import { Loading } from './components/Loading';
 
 export const UserContext = createContext()
 function App() {
@@ -30,6 +32,8 @@ function App() {
   //               cat: "Kaftans",
   //           },
   // )
+  const [cdata, setCdata] = useState(null)
+  const [loading, setisloading] = useState(true)
   const [cart, setCart] = useState(localStorage.getItem("FaawCart") ? JSON.parse(localStorage.getItem("FaawCart")) : []);
   const updateCart = (props) => {
     setCart([...cart, props])
@@ -43,14 +47,30 @@ function App() {
   }
   useEffect(() => {
     localStorage.setItem("FaawCart", JSON.stringify(cart))
+    setCdata(coldata);
+    setisloading(false)
   }, [cart])
+  // useEffect(() => {
+  //   const url = "http://localhost:8000";
+  //   fetch(url)
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       setCdata(data);
+  //       setisloading(false)
+  //     })
+  //     .catch(error => {
+  //       console.error("Error fetching categories:", error);
+  //       setisloading(false)
+  //     });
+  // }, [])
 
   return (
     <div className="App">
-      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem}}>
+      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata}}>
         <ToastContainer toastClassName="custom-toast"/>
         <ScrollToTop>
           <Layout>
+            {!loading ?
             <Routes>
               <Route path='/' exact="true" element= {<Home/>}/>
               <Route path='/collections/:name' element= {<Collections/>}/>
@@ -58,6 +78,9 @@ function App() {
               <Route path='/cart' element={<Cart/>}/>
               <Route path="*" element={<NotFound/>} />
             </Routes>
+            :
+            <Loading/>
+            }
           </Layout>
         </ScrollToTop>
       </UserContext.Provider>
