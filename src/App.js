@@ -66,7 +66,7 @@ function App() {
 
   return (
     <div className="App">
-      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata}}>
+      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata, setCart}}>
         <ToastContainer toastClassName="custom-toast"/>
         <ScrollToTop>
           <Layout>

@@ -1,10 +1,33 @@
-import React from 'react'
+import React, {useContext, useState } from 'react'
 import times2 from "../assets/times2.png"
+import { UserContext } from '../App'
+import { toast } from 'react-toastify';
 
 export const Basket = (props) => {
-    const cart = props.cart
+    // const cart = props.cart
+    const [cartItems, setCartItems] = useState(props.cart);
     const rmv = props.rmv
+    const setCart = useContext(UserContext).setCart
     const setShowCheck = props.setShowCheck
+    const handleAdd = (index) => {
+    const updatedCart = [...cartItems];
+    if (updatedCart[index].quantity_choice < updatedCart[index].quantity) {
+      updatedCart[index].quantity_choice += 1;
+      setCartItems(updatedCart);
+    }
+  };
+  const handleMinus = (index) => {
+    const updatedCart = [...cartItems];
+    if (updatedCart[index].quantity_choice > 1) {
+      updatedCart[index].quantity_choice -= 1;
+      setCartItems(updatedCart);
+    }
+  };
+  const updateCart = () => {
+    setCart(cartItems)
+    toast.success("Cart Updated", {
+        position:"bottom-right"})
+  }
   return (
     <div className='eCart'>
             <div className='emptyBlack'></div>
@@ -22,7 +45,7 @@ export const Basket = (props) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {cart.map((each, idx) => (
+                            {cartItems.map((each, idx) => (
                                 <tr key={idx}>
                                     <td>
                                         <div className='tableR'>
@@ -38,14 +61,17 @@ export const Basket = (props) => {
                                         </div>
                                     </td>
                                     <td className='tableP'><p className='pad'>&#8358;{each.new_price.toLocaleString()}.00</p></td>
-                                    <td className='tableP'><p className='pad'>{each.quantity_choice}</p></td>
+                                    <td className='tableP'>
+                                        {/* <div className='changNum'><button className='plus' onClick={() => updateNum("-")}>-</button><p className='num'>{number}</p><button className='plus' onClick={() => updateNum("+")}>+</button></div> */}
+                                        <p className='pad changNum'><button className='plus' onClick={() => handleMinus(idx)}>-</button><p className='num'>{each.quantity_choice}</p><button className='plus' onClick={() => handleAdd(idx)}>+</button></p>
+                                        </td>
                                     <td className='tableP price'><p className='pad'>&#8358;{(each.quantity_choice * each.new_price).toLocaleString()}.00</p></td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                         <div className='upC'>
-                            <button>Update Cart</button>
+                            <button onClick={updateCart}>Update Cart</button>
                         </div>
                 </div>
                 <button onClick={() =>  setShowCheck(true)}>Proceed</button>
