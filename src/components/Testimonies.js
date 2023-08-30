@@ -4,10 +4,10 @@ import "../styles/testimonies.css"
 export const Testimonies = () => {
   return (
     <div className='testimonies'>
-        <div className='ds1'>
+        <div className='ds1 reveal'>
                 <h2 className='dT1 testTxxt'>Testimonials</h2>
             </div>
-        <div className='allTest'>
+        <div className='allTest reveal'>
             <div className='revCont'>
                 <div className="revieW">
                     <div className='testTop'>

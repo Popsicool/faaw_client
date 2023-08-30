@@ -155,6 +155,7 @@
 .tableWrapper{
 	border: 1px solid #ECDBCB;
 	border-radius: 15px;
+	margin-bottom: 30%;
 }
 .table{
 	width: 100%;
@@ -212,7 +213,9 @@
 }
 .upC{
 	width: 100%;
-	text-align: end;
+	display: flex;
+	justify-content: space-around;
+	/* text-align: end; */
 }
 .upC > button{
 	width: 20%;

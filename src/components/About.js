@@ -3,7 +3,7 @@ import pic from "../assets/pic1.png"
 export const About = () => {
   return (
     <div className='aboutOutCont'>
-        <div className='aboutOut'>
+        <div className='aboutOut reveal'>
             <div className='ds1'>
                 <h2 className='abts'>About Us</h2>
             </div>

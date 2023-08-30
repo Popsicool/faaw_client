@@ -11,7 +11,7 @@ export const Cart = () => {
     const navigate = useNavigate()
     const cart = useContext(UserContext).cart
     const deleteItem = useContext(UserContext).deleteItem
-    const [showcart, setShowCart] = useState(true)
+    const [showcart, setShowCart] = useState(!true)
     const [showCheck, setShowCheck] = useState(false)
     const handleClick = () => {
         navigate(-1)

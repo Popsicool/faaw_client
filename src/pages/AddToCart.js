@@ -70,13 +70,13 @@ export const AddToCart = () => {
   return (
     <div className='addtocart'>
         <div className='row'>
-            <div className='col-md-6 conTop'>
+            <div className='col-md-6 conTop reveal'>
                 <img className='cartImg' src={images[currentIndex]} alt="selcted item"/>
                 <div className='leftRight'>
                     <button onClick={onPrevClick} className='gtlT'>&lt;</button> <button onClick={onNextClick} className='gtlT'>&gt;</button>
                 </div>
             </div>
-            <div className='col-md-6 cartTopRight'>
+            <div className='col-md-6 cartTopRight reveal'>
                 <div>
                     <p className='cartName'>{selected.name}</p>
                     <p className='cartPrice'>&#8358;{selected.new_price.toLocaleString()}.00</p>
@@ -126,7 +126,7 @@ export const AddToCart = () => {
                 </div>
             </div>
         </div>
-        <div className='row'>
+        <div className='row reveal'>
             <div className='col-md-6 g-x-3 addCartBottom'>
                 {images.length > 1 &&
                 <div className='imgWap'>
@@ -148,7 +148,7 @@ export const AddToCart = () => {
                 </div>
             </div>
         </div>
-        <div className='row'>
+        <div className='row reveal'>
             <div className='dReview'><p className={showDescription ? "rv1 dRv1": "rv2 dRv1"} onClick={() => setShowDescription(true)}>Description</p><p onClick={() => setShowDescription(false)} className={showDescription ? "rv2 dRv": "rv1 dRv"}>Review(0)</p> <p className='rHr'></p> </div>
             {showDescription ?
             <div>
@@ -181,7 +181,7 @@ export const AddToCart = () => {
             </div>
             }
         </div>
-        <div className='row'>
+        <div className='row reveal'>
             <div className='relatedP'>
                 <p>Related product</p>
                     <div className='row gx-5'>

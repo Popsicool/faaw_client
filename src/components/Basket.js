@@ -63,7 +63,7 @@ export const Basket = (props) => {
                                     <td className='tableP'><p className='pad'>&#8358;{each.new_price.toLocaleString()}.00</p></td>
                                     <td className='tableP'>
                                         {/* <div className='changNum'><button className='plus' onClick={() => updateNum("-")}>-</button><p className='num'>{number}</p><button className='plus' onClick={() => updateNum("+")}>+</button></div> */}
-                                        <p className='pad changNum'><button className='plus' onClick={() => handleMinus(idx)}>-</button><p className='num'>{each.quantity_choice}</p><button className='plus' onClick={() => handleAdd(idx)}>+</button></p>
+                                        <div className='pad changNum'><button className='plus' onClick={() => handleMinus(idx)}>-</button><p className='num'>{each.quantity_choice}</p><button className='plus' onClick={() => handleAdd(idx)}>+</button></div>
                                         </td>
                                     <td className='tableP price'><p className='pad'>&#8358;{(each.quantity_choice * each.new_price).toLocaleString()}.00</p></td>
                                 </tr>
@@ -71,10 +71,10 @@ export const Basket = (props) => {
                         </tbody>
                     </table>
                         <div className='upC'>
+                            <button onClick={() =>  setShowCheck(true)}>Proceed Checkout</button>
                             <button onClick={updateCart}>Update Cart</button>
                         </div>
                 </div>
-                <button onClick={() =>  setShowCheck(true)}>Proceed</button>
             </div>
     </div>
   )

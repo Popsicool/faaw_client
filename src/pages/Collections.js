@@ -29,7 +29,7 @@ export const Collections = () => {
             <div className='colBottom'>
               <div className='row gx-5'>
                 {colItem.items.map((each, index) => (
-                  <div className='col-md-4 colCard' key={index}>
+                  <div className='col-md-4 colCard reveal' key={index}>
                     <div className='colCardTop'>
                       <img className='colCardTopImg' src={each.img[0]} alt="collImg"/>
                     </div>
