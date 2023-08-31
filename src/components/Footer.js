@@ -42,11 +42,6 @@ export const Footer = () => {
             <hr className='contDiver' />
             <div>
               <ul className='socialIcons'>
-                {/* <li>
-                  <a href="https:fb.com" target="_blank" rel="noopener noreferrer">
-                    <img src={fb}  alt="facebook"/>
-                  </a>
-                </li> */}
                 <li>
                   <a href="https://www.twitter.com/houseoffaaw" target="_blank" rel="noopener noreferrer">
                     <img src={tw} alt="twitter" />

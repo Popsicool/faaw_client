@@ -4,7 +4,7 @@ import './App.css';
 import { Layout } from './components/Layout';
 import {Routes, Route} from "react-router-dom"
 import { Home } from './pages/Home';
-import { Collections } from './pages/Collections';
+import { CollectionPage, Collections } from './pages/CollectionPage';
 import { AddToCart } from './pages/AddToCart';
 // import cat1 from "./assets/cat1.png"
 import { ScrollToTop } from './components/ScrollToTop';
@@ -14,6 +14,7 @@ import { Cart } from './pages/Cart';
 import { Checkselected } from './components/CheckSelected';
 import coldata from "./data/CollData"
 import { Loading } from './components/Loading';
+import { CategoryPage } from './pages/CategoryPage';
 
 export const UserContext = createContext()
 function App() {
@@ -73,7 +74,8 @@ function App() {
             {!loading ?
             <Routes>
               <Route path='/' exact="true" element= {<Home/>}/>
-              <Route path='/collections/:name' element= {<Collections/>}/>
+              <Route path='/shop/:name' element= {<CategoryPage/>}/>
+              <Route path='/collection/:name' element= {<CollectionPage/>} />
               <Route path='/addToCart' element= {<Checkselected><AddToCart/></Checkselected>}/>
               <Route path='/cart' element={<Cart/>}/>
               <Route path="*" element={<NotFound/>} />

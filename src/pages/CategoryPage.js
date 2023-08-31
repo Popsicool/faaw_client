@@ -7,7 +7,7 @@ import { UserContext } from '../App'
 import { useNavigate } from 'react-router-dom';
 
 
-export const Collections = () => {
+export const CategoryPage = () => {
     const collData = useContext(UserContext).cdata
     const navigate = useNavigate()
     const { name } = useParams()

@@ -1,5 +1,6 @@
 footer{
     background-color: #ECDBCB;
+    max-width: 100%;
 }
 .footerTop{
     display: flex;
@@ -70,7 +71,6 @@ input:focus, input:active{
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-
 }
 .footerBottomLeft > p{
     font-family: Poppins;
@@ -83,7 +83,7 @@ input:focus, input:active{
 
 }
 .contDiver{
-    width: 150%;
+    width: 100%;
 }
 .dividd{
     color:#D4A80A;
@@ -131,7 +131,7 @@ input:focus, input:active{
 }
 .same2{
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: 275;
     line-height: 18px;
     letter-spacing: 0em;
@@ -148,3 +148,77 @@ input:focus, input:active{
     background-color: #232323;
     margin-top: -3%;
 } */
+
+
+@media only screen and (max-width: 600px) {
+    .footerBottom{
+        display: grid;
+    }
+    .socialIcons{
+        justify-content: left;
+    }
+    .socialIcons li{
+        padding-right: 5%;
+    }
+    .bM{
+        margin-top: 15%;
+    }
+    .bM2{
+        margin-top: 5%;
+    }
+    .footerBottomRight{
+        padding-top: 10%;
+        text-align: left;
+    }
+    .footerBottomLeft > h3{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+    }
+    .footerBottomLeft > p{
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+    }
+    .sameSize{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .same2{
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 275;
+        line-height: 15px;
+    }
+    .footerBottomMiddle{
+        width: 100%;
+    }
+    .copyright{
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .fT > h5{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    .fT > p{
+        font-family: Poppins;
+        font-size: 10px;
+        font-weight: 275;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+}

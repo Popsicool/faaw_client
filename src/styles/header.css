@@ -16,7 +16,6 @@
     letter-spacing: 0em;
     text-align: left;
     padding: 30px 50px 0px 50px;
-
 }
 .callus, .callus:hover, .callus:active, .callus:visited{
     color: #ffffff;
@@ -64,9 +63,15 @@
     width: 100%;
     top: 0;
 }
+.hamMenu{
+    cursor: pointer;
+}
 .faawlogo {
   margin: auto;
   width: 50%;
+}
+.faawlogo > img{
+    height: 100%;
 }
 
 .hoF{
@@ -87,7 +92,7 @@
 
 }
 
-nav > ul{
+.normalMenu{
   display: flex;
   justify-content: space-between;
 }
@@ -99,6 +104,7 @@ nav > ul{
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+    justify-content: space-between;
 }
 .lks:hover, .sameSize:hover, .cBox:hover, .hoF:hover{
     font-weight: bolder;
@@ -118,13 +124,16 @@ a.active {
 .ic{
     padding-left: 50%;
 }
+
 .navbarss{
     width: 50%;
 }
 .hd{
     color: #ECDBCB;
 }
-
+.cls{
+    display: none;
+}
 .dis{
     position:absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -152,4 +161,101 @@ a.active {
     line-height: 38px;
     letter-spacing: 0em;
 
+}
+
+.hamburgerMenu{
+    display: flex;
+}
+.hamburgerImg >img{
+    height: 50%;
+}
+.hamburgerImg{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .hamburgerMenu{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburgerImg{
+        display: grid;
+    }
+    .normalMenu{
+        display: none;
+    }
+
+    .hd{
+        display: none;
+    }
+    .showMenu{
+        display: grid;
+        padding-top: 25%;
+        padding-bottom: 5%;
+        position: fixed;
+        left: 0;
+        top:-10%;
+        margin-top: 5%;
+        z-index: 100000000000;
+        background-color: #222222;
+        width: 50%;
+        color: #ffffff;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        /* height: 50vh; */
+    }
+    .showMenu > a{
+        color: #ffffff;
+    }
+
+    .header1{
+        font-size: 8px;
+        height: 40px;
+        padding: 10px 50px 0px 50px;
+    }
+    .oSt{
+        height: 70%;
+    }
+    .header2{
+        height: 50px;
+        line-height: 10px;
+    }
+    .faawlogo{
+        height: 20px;
+    }
+    .hoF{
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .cBox > p{
+        font-size: 1rem;
+    }
+    .lks{
+        width: 90%;
+        border-bottom: .1px solid #ffffff;
+    }
+    .dis{
+         position:absolute;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background-color: #222222;
+        padding: 12px 20px;
+        z-index: 1;
+        width: 80%;
+    }
+    .ddsl{
+        color: #ffffff;
+    }
+    .cartBox{
+        padding-top: 15%;
+    }
 }

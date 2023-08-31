@@ -18,6 +18,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:3,
+                collection:"Aderinoye",
             },
             {
                 name: "Knowledge set (Grey)",
@@ -28,6 +29,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:4,
+                collection:"Aderinoye",
             },
             {
                 name: "Leadership set (Burgundy)",
@@ -39,6 +41,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2],
                 stars:5,
+                collection:"Aderinoye",
             },
             {
                 name: "Love set (Lilac)",
@@ -50,6 +53,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:4,
+                collection:"Aderinoye",
             },
             {
                 name: "Intelligence set (Ivory)",
@@ -60,6 +64,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat2, cat3],
                 stars:3,
+                collection:"Aderinoye",
             },
             {
                 name: "Friendship set (Blue)",
@@ -70,6 +75,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat3],
                 stars:5,
+                collection:"Aderinoye",
             },
             {
                 name: "Wealth set (white)",
@@ -81,6 +87,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:4,
+                collection:"Aderinoye",
             },
             {
                 name: "The african child set (Green)",
@@ -121,6 +128,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:3,
+                collection:"Aderinola",
             },
             {
                 name: "Knowledge set (Grey)",
@@ -132,6 +140,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:5,
+                collection:"Aderinola",
             },
             {
                 name: "Leadership set (Burgundy)",
@@ -143,6 +152,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat3, cat2, cat1],
                 stars:4,
+                collection:"Aderinola",
             },
             {
                 name: "Love set (Lilac)",
@@ -150,6 +160,7 @@ const collData = [
                 new_price: 35000,
                 img: [cat2, cat1, cat3],
                 stars:5,
+                collection:"Aderinola",
             },
             {
                 name: "Intelligence set (Ivory)",
@@ -157,6 +168,7 @@ const collData = [
                 new_price: 35000,
                 img: [cat1, cat2, cat3],
                 stars:3,
+                collection:"Aderinola",
             },
             {
                 name: "Friendship set (Blue)",
@@ -168,6 +180,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:4,
+                collection:"Aderinola",
             },
             {
                 name: "Wealth set (white)",
@@ -219,6 +232,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:5,
+                collection:"Ariyike",
             },
             {
                 name: "Knowledge set (Grey)",
@@ -230,6 +244,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat1, cat2, cat3],
                 stars:4,
+                collection:"Ariyike",
             },
             {
                 name: "Leadership set (Burgundy)",
@@ -241,6 +256,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat3, cat2, cat1],
                 stars:3,
+                collection:"Ariyike",
             },
             {
                 name: "Love set (Lilac)",
@@ -252,6 +268,7 @@ const collData = [
                 description: "What you get; A kaftan top.A matching pants",
                 img: [cat2, cat1, cat3],
                 stars:5,
+                collection:"Ariyike",
             },
             {
                 name: "Intelligence set (Ivory)",
