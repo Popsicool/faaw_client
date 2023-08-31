@@ -4,7 +4,7 @@ import './App.css';
 import { Layout } from './components/Layout';
 import {Routes, Route} from "react-router-dom"
 import { Home } from './pages/Home';
-import { CollectionPage, Collections } from './pages/CollectionPage';
+import { CollectionPage} from './pages/CollectionPage';
 import { AddToCart } from './pages/AddToCart';
 // import cat1 from "./assets/cat1.png"
 import { ScrollToTop } from './components/ScrollToTop';
