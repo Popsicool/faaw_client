@@ -1,9 +1,6 @@
 .fa-angle-down{
     padding-left: 0%;
 }
-/* .headerCont{
-    position: relative;
-} */
 .header1{
     background-color: #232323;
     color: #ffffff;
@@ -176,7 +173,7 @@ a.active {
 
 @media only screen and (max-width: 600px) {
     .hamburgerMenu{
-        width: 60%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
     }
@@ -237,8 +234,9 @@ a.active {
         letter-spacing: 0em;
         text-align: left;
     }
-    .cBox > p{
+    .cBox > p:nth-child(1){
         font-size: 1rem;
+        display: none;
     }
     .lks{
         width: 90%;
@@ -256,6 +254,6 @@ a.active {
         color: #ffffff;
     }
     .cartBox{
-        padding-top: 15%;
+        padding-top: 50%;
     }
 }
