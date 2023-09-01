@@ -130,6 +130,25 @@
 }
 
 @media only screen and (max-width: 600px) {
+	/* .revieW > p{
+		font-size: 20px;
+		line-height: 15px;
+	} */
+	.revCont, .allTest{
+		display: grid;
+		width: 100%;
+		padding: 0;
+	}
+	.testTop{
+		padding: 0 10%;
+	}
+	.allTest{
+		padding-bottom: 10%;
+	}
+	.revieW, .reviewMiddle{
+		width: 100%;
+		height: 100%;
+	}
 	.aboutText {
 	/* width: 60%; */
 	font-family: Poppins;

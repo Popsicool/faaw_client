@@ -460,7 +460,7 @@
 	.dAdd, .yourOrder, .tota, .shoppingCartText{
 		font-size: 1.5rem;
 	}
-	.lbl, .yourProduct, .st1, .st2, .nT, .nTT, .makeSure, .guara2, .bankStuff > p, .tory, .noItm, .cartBoxBtn{
+	.lbl, .yourProduct, .st1, .st2, .nT, .nTT, .makeSure, .guara2, .bankStuff > p, .tory, .noItm, .cartBoxBtn, .noItemBtn{
 		font-size: 1rem;
 	}
 	.checkoutInput, .checkoutInput:focus, .checkoutInput:active, .checkoutTextArea, .checkoutTextArea:focus, .checkoutTextArea:active{

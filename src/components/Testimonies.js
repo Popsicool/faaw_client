@@ -42,7 +42,6 @@ export const Testimonies = () => {
                     </div>
                     <p>Thank you for being my perfect tailor. I love my Kaftan a lot.</p>
                 </div>
-
             </div>
         </div>
         <button className='rBtn'>See Our Client Reviews</button>
