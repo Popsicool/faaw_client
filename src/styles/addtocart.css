@@ -363,6 +363,9 @@ select option{
 }
 
 @media only screen and (max-width: 600px) {
+  .cartBtns{
+    padding-right: 0;
+  }
   .cartImg{
       width: 100%;
       height: 500px;
@@ -370,6 +373,11 @@ select option{
   }
   .cartTopRight{
     padding-top: 5%;
+  }
+  .leftRight{
+    width: 95%;
+    padding-left: 5%;
+    padding-right: 5%
   }
   select{
     width: 100%;
@@ -398,5 +406,31 @@ select option{
           height: 60px;
           font-size: 15px;
           padding: 0%;
+      }
+      .addCartBottom{
+        height: 300px;
+      }
+      .imgWap{
+        height: 200px;
+      }
+      .formIn, .formIn:focus, .formIn:active, .formTextArea, .formTextArea:focus, .formTextArea:active{
+      height: 40px;
+      font-size: 1rem;
+      }
+      .formTextArea, .formTextArea:focus, .formTextArea:active{
+      height: 100px;
+      }
+      .submitBtn{
+        font-size: 1rem;
+        line-height: 3rem;
+      }
+      .revlabel{
+        font-size: 1rem;
+      }
+      .relatedP{
+        font-size: 2rem;
+      }
+      .colCd{
+        margin-bottom: 15px;
       }
 }

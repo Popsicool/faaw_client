@@ -10,7 +10,7 @@ export const Collections = () => {
           <div className='col-Img'>
             <img src={each.img} alt="col"/>
           </div>
-          <Link to={`/collection/${each.name}`}><button className='col-btn'><p>{each.name}</p><p>Collections</p></button></Link>
+          <Link to={`/collections/${each.name}`}><button className='col-btn'><p>{each.name}</p><p>Collections</p></button></Link>
         </div>
       ))}
     </div>

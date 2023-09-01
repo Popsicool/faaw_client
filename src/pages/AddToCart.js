@@ -16,7 +16,7 @@ export const AddToCart = () => {
     const [color, setColor] = useState(selected.color[0])
     const [number, setNumber] = useState(1)
     const [selectDivIdx, setSelectdividx] = useState(0)
-    const [showDescription, setShowDescription] = useState(false)
+    const [showDescription, setShowDescription] = useState(true)
     const colItem = collData.find(obj => obj.name === selected.cat)
     const catitems = colItem.items.filter((obj) => obj.name !== selected.name);
     const updateSelected = useContext(UserContext).updateSelected
@@ -120,8 +120,8 @@ export const AddToCart = () => {
                     <p className='cartBtns'><button className='dBtn cartBtn' onClick={addItem}>Add to cart</button> <button className='dBtn cartBtn'>Buy it now</button></p>
                     <hr className='cartHr1'/>
                     <div>
-                        <p>Sku: N/A  Categories: Adedrinoye set ,Kaftans set</p>
-                        <p>Tags: <span className='selTag'>{selected.category}</span></p>
+                        <p>Sku: N/A, Categories:  {selected.collection && <span>{selected.collection} set,  </span>}{selected.cat} set</p>
+                        <p>Tags: {selected.tag ? <span className='selTag'>{selected.tag}</span> : <span>N/A</span>}</p>
                     </div>
                 </div>
             </div>

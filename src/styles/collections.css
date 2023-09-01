@@ -72,3 +72,12 @@
 .dBtn2{
     width: 80%;
 }
+
+@media only screen and (max-width: 600px) {
+    .colCardTop{
+        height: 300px;
+    }
+    .colTitle{
+        font-size: 3rem;
+    }
+}

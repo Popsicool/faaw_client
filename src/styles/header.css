@@ -164,16 +164,19 @@ a.active {
     display: flex;
 }
 .hamburgerImg >img{
-    height: 50%;
+    height: 100%;
 }
 .hamburgerImg{
+    padding-top: auto;
     display: none;
+    height: 30%;
+    margin-top: 5%;
 }
 
 
 @media only screen and (max-width: 600px) {
     .hamburgerMenu{
-        width: 80%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -197,7 +200,7 @@ a.active {
         margin-top: 5%;
         z-index: 100000000000;
         background-color: #222222;
-        width: 50%;
+        width: 100%;
         color: #ffffff;
         font-family: Inter;
         font-size: 18px;
@@ -212,9 +215,12 @@ a.active {
     }
 
     .header1{
-        font-size: 8px;
+        font-size: 10px;
         height: 40px;
-        padding: 10px 50px 0px 50px;
+        padding: 10px 10px 0px 10px;
+    }
+    .header2{
+        padding: 10px 10px 0px 10px;
     }
     .oSt{
         height: 70%;
@@ -255,5 +261,10 @@ a.active {
     }
     .cartBox{
         padding-top: 50%;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .hamMenu2{
+        width: 150%;
     }
 }

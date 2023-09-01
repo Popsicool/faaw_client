@@ -172,26 +172,26 @@ input:focus, input:active{
     }
     .footerBottomLeft > h3{
         font-family: Poppins;
-        font-size: 12px;
+        font-size: 1.3rem;
         font-weight: 400;
-        line-height: 18px;
+        line-height: 28px;
         letter-spacing: 0em;
     }
     .footerBottomLeft > p{
         font-family: Poppins;
-        font-size: 10px;
+        font-size: .8rem;
         font-weight: 400;
-        line-height: 15px;
+        line-height: 5px;
         letter-spacing: 0em;
     }
     .sameSize{
         font-family: Poppins;
-        font-size: 12px;
+        font-size: 1rem;
         font-weight: 300;
     }
     .same2{
         font-family: Poppins;
-        font-size: 10px;
+        font-size: .7rem;
         font-weight: 275;
         line-height: 15px;
     }
@@ -206,15 +206,18 @@ input:focus, input:active{
         letter-spacing: 0em;
         text-align: left;
     }
+    .fT{
+        width: 100%;
+    }
     .fT > h5{
         font-family: Poppins;
-        font-size: 12px;
+        font-size: 1rem;
         font-weight: 300;
         line-height: 18px;
     }
     .fT > p{
         font-family: Poppins;
-        font-size: 10px;
+        font-size: .7rem;
         font-weight: 275;
         line-height: 15px;
         letter-spacing: 0em;

@@ -57,7 +57,7 @@ export const Header = () => {
                                         <img src={closeMenu} alt="close menu" onClick={() => {
                                         offAll()
                                         setOpen(false)
-                                    }} className='hamMenu'/>
+                                    }} className='hamMenu hamMenu2'/>
                                     </p>
                                 </div>
                                 <NavLink to='/' onClick={offAll}>

@@ -15,14 +15,13 @@ export const CollectionPage = () => {
     for (const category of collData) {
         for (const item of category.items) {
             if (item.collection === name) {
-                item.name = category.name;
+                item.cat = category.name;
                 colItem.push(item);
             }
         }
     }
     const updateSelected = useContext(UserContext).updateSelected
     const addToCart = (props) => {
-      props.cat = name
       updateSelected(props)
       navigate("/addToCart")
     }
@@ -42,7 +41,7 @@ export const CollectionPage = () => {
                       <img className='colCardTopImg' src={each.img[0]} alt="collImg"/>
                     </div>
                     <div className='colCardBottom'>
-                      <p className='colCardSet'>{colItem.name} set</p>
+                      <p className='colCardSet'>{each.cat} set</p>
                       <p className='colCardName'>{each.name}</p>
                       <p className='colCardPrice'>
                       {each.old_price && <s className='oldPrice'>&#8358;{each.old_price}</s>}  &#8358;{each.new_price}

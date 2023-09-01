@@ -474,6 +474,10 @@
 	.generateBtn{
 		font-size: 16px;
 	}
+	.tory{
+		padding-top:5%;
+		line-height: 20px;
+	}
 	.tory2{
 		font-size: .7rem;
 	}
