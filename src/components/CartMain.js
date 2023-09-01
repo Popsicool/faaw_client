@@ -42,7 +42,7 @@ export const CartMain = (props) => {
 
                 </div>
                 ))}
-                <div className='cartBoxBottom bL'>
+                <div className='cartBoxBottom'>
                     <p>Subtotal:</p>
                     <p>&#8358;{price.toLocaleString()}.00</p>
                 </div>

@@ -77,7 +77,7 @@ export const Header = () => {
                                             </ol>
                                             <ul>
                                                 {coldata?.map((each, idx) => (
-                                                    <Link to={`/collections/${each.name}`} key={idx}>
+                                                    <Link to={`/shop/${each.name}`} key={idx}>
                                                         <li className='ddsl' key={idx}>{each.name}</li>
                                                     </Link>
                                                 ))}

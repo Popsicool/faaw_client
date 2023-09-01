@@ -121,7 +121,7 @@ export const AddToCart = () => {
                     <hr className='cartHr1'/>
                     <div>
                         <p>Sku: N/A  Categories: Adedrinoye set ,Kaftans set</p>
-                        <p>Tags: <span className='selTag'>white Kaftans set</span></p>
+                        <p>Tags: <span className='selTag'>{selected.category}</span></p>
                     </div>
                 </div>
             </div>

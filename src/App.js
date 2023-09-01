@@ -75,7 +75,7 @@ function App() {
             <Routes>
               <Route path='/' exact="true" element= {<Home/>}/>
               <Route path='/shop/:name' element= {<CategoryPage/>}/>
-              <Route path='/collection/:name' element= {<CollectionPage/>} />
+              <Route path='/collections/:name' element= {<CollectionPage/>} />
               <Route path='/addToCart' element= {<Checkselected><AddToCart/></Checkselected>}/>
               <Route path='/cart' element={<Cart/>}/>
               <Route path="*" element={<NotFound/>} />

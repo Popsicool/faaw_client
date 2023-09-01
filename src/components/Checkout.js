@@ -73,7 +73,7 @@ export const Checkout = (props) => {
                             /><br/>
                         </div>
                         <div className='col-md-6 lN'>
-                            <label className="lbl lNT">Last name*</label><br/>
+                            <label className="lbl">Last name*</label><br/>
                             <input
                             className='checkoutInput fAl'
                             value={lastname}

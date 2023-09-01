@@ -78,7 +78,6 @@
     width: 100%;
     height: 855px;
     border-radius: 15px;
-
 }
 .colorCircle{
     /* border: 1px solid #fff; */
@@ -259,7 +258,6 @@ select option{
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
-
 }
 
 .dRv{
@@ -362,4 +360,43 @@ select option{
   line-height: 60px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .cartImg{
+      width: 100%;
+      height: 500px;
+      border-radius: 15px;
+  }
+  .cartTopRight{
+    padding-top: 5%;
+  }
+  select{
+    width: 100%;
+  }
+  .cartBtn{
+    font-size: 15px;
+  }
+  .rv1{
+      border-bottom: 7px solid #ECDBCB;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 5px;
+    }
+  .rv2{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .whatYouGet{
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 10px
+    }
+    .dBtn2{
+          width:100%;
+          height: 60px;
+          font-size: 15px;
+          padding: 0%;
+      }
 }

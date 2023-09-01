@@ -156,10 +156,13 @@
 	border: 1px solid #ECDBCB;
 	border-radius: 15px;
 	margin-bottom: 30%;
+	overflow-x:auto;
+	overflow-y:hidden;
 }
 .table{
 	width: 100%;
 	color: #ffffff;
+	overflow-x:auto;
 	/* padding: 25%; */
 }
 .tableP0{
@@ -412,4 +415,82 @@
 	font-size: 1rem;
 	font-weight: 300;
 
+}
+
+@media only screen and (max-width: 600px) {
+	.itemImgCont {
+		height: 80%;
+		/* width: 70%; */
+	}
+	.tableP0{
+		font-size: 20px;
+	}
+	.tableP, .tableP2{
+		font-family: Poppins;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 25px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	.itemImgCont {
+		width: 200px;
+	}
+	.upC > button{
+		width: 40%;
+		height: 50px;
+		margin: 1% 5% 1% 0;
+		border-radius: 7.5px;
+		font-family: Poppins;
+		font-size: 15px;
+		line-height: 15px;
+	}
+	/* .plus2{
+		width:30%
+	} */
+	.itemImgCont2{
+		padding-right: 20%;
+	}
+	.changNum2{
+		padding-top: 15%;
+	}
+	.cartCart{
+		font-size: 2.5rem;
+	}
+	.dAdd, .yourOrder, .tota, .shoppingCartText{
+		font-size: 1.5rem;
+	}
+	.lbl, .yourProduct, .st1, .st2, .nT, .nTT, .makeSure, .guara2, .bankStuff > p, .tory, .noItm, .cartBoxBtn{
+		font-size: 1rem;
+	}
+	.checkoutInput, .checkoutInput:focus, .checkoutInput:active, .checkoutTextArea, .checkoutTextArea:focus, .checkoutTextArea:active{
+		height: 50%;
+		font-size: 1rem;
+		border-radius: 5px;
+	}
+	.checkoutBottomR{
+		width: 100%;
+	}
+	.generateBtn{
+		font-size: 16px;
+	}
+	.tory2{
+		font-size: .7rem;
+	}
+	.itemRT1{
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 22px;
+	}
+	.itemRT2{
+		font-size: 1.2rem;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	.itemRowCol1{
+		width: 70%;
+	}
+	.cartBoxBottom > p{
+		font-size: 1rem;
+	}
 }
