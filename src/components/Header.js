@@ -24,9 +24,9 @@ export const Header = () => {
   return (
     <div className='headerCont'>
             <div className='header1'>
-                <p>Need help? Call us: <a href="tel:+2348167721054" className='callus'>(+234) 81 677 210 54</a></p>
-                <p>
-                    <a className='callus' href="https://goo.gl/maps/MHaxhhniS1A29fwV7">
+                <p>Need help? Call us: <a href="tel:+2348167721054" className='callus cUsc'>(+234) 81 677 210 54</a></p>
+                <p className='cUsc'>
+                    <a className='callus cUsc' href="https://goo.gl/maps/MHaxhhniS1A29fwV7">
                     <img className='oSt' src={location} alt='location' />   Our store </a></p>
 
             </div>

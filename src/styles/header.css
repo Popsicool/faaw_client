@@ -17,6 +17,9 @@
 .callus, .callus:hover, .callus:active, .callus:visited{
     color: #ffffff;
 }
+.cUsc{
+    color: #ffffff !important;
+}
 .cBox{
     display: flex;
     justify-content: space-between;
