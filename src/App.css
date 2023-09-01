@@ -10,23 +10,6 @@ body{
   min-height: 100vh;
   max-width: 100%;
 }
-/* .container{
-  min-height: 100vh;
-} */
-
-/* .App {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 
 
 li{
@@ -35,6 +18,7 @@ li{
 
 a:link {
   text-decoration: none;
+  color:#000000
 }
 
 a:visited {
