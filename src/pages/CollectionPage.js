@@ -5,12 +5,14 @@ import star from "../assets/stars.png"
 import star1 from "../assets/stars1.png"
 import { UserContext } from '../App'
 import { useNavigate } from 'react-router-dom';
+import styldata from '../data/styleData';
 
 
 export const CollectionPage = () => {
     const collData = useContext(UserContext).cdata
     const navigate = useNavigate()
     const { name } = useParams()
+    const col = styldata.filter((item) => item.name === name);
     const colItem = [];
     for (const category of collData) {
         for (const item of category.items) {
@@ -25,12 +27,14 @@ export const CollectionPage = () => {
       updateSelected(props)
       navigate("/addToCart")
     }
-
   return (
     <div className="collections">
-            <div className='colTop' style={{backgroundImage: `url(${colItem.img})`}}>
+            <div className='colTop' style={{backgroundImage: `url(${col[0].img})`}}>
             <div className='heroChild'>
-              <p className='colTitle'>{name}</p>
+              <div className='heroInner'>
+                <p className='colTitle'>{col[0].name}</p>
+                <p className='colTitle2'>{col[0].desc}</p>
+              </div>
             </div>
             </div>
             <div className='colBottom'>

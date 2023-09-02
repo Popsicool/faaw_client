@@ -3,6 +3,7 @@ import "../styles/hero.css"
 import styldata from '../data/styleData';
 import heroBG from '../assets/heroBG.png'
 import piece from '../assets/piece.png'
+import { Link } from 'react-router-dom'
 export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const heroData = [
@@ -10,13 +11,13 @@ export const Hero = () => {
       backgroundImage: `url(${heroBG})`,
       text1: 'Confidence  .  Comfort  .  Class',
       text2: 'Saunter In For a Great Experience',
-      buttonLabel: 'Button 1',
+      link: '/shop/Kaftans',
     },
     {
       backgroundImage: `url(${piece})`,
       text1: 'Available Designs',
       text2: 'Let’s explore some of the pieces elegant individuals like you picked',
-      buttonLabel: 'Button 2',
+      link: '/shop/Kaftans',
     },
     // {
     //   backgroundImage: `url(${heroBG})`,
@@ -28,8 +29,9 @@ export const Hero = () => {
   styldata.forEach(element => {
       var newBG = {};
       newBG.backgroundImage =  `url(${element.img})`
-      newBG.text1 = element.name
+      newBG.text1 = element.name + ' Collection'
       newBG.text2 = element.desc
+      newBG.link = `/collections/${element.name}`
       heroData.push(newBG)
     });
   useEffect(() => {
@@ -53,7 +55,9 @@ export const Hero = () => {
           <div className='heroInner'>
             <h3 className='conf'>{currentHero.text1}</h3>
             <p className='saunt'>{currentHero.text2}</p>
-            <button className='shopNow'>Shop Now</button>
+            <Link to={currentHero.link}>
+              <button className='shopNow'>Shop Now</button>
+            </Link>
           </div>
         </div>
     </div>
