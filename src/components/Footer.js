@@ -84,7 +84,7 @@ export const Footer = () => {
                   Home
                 </li>
               </NavLink>
-              <NavLink to='/collections'>
+              <NavLink to='/shop/Kaftans'>
                 <li className='sameSize'>
                   Shop
                 </li>
@@ -94,7 +94,7 @@ export const Footer = () => {
                   Cart
                 </li>
               </NavLink>
-              <NavLink to='/shop'>
+              <NavLink to='/policy'>
                 <li className='sameSize'>
                   General business policy
                 </li>

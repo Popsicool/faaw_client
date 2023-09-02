@@ -139,7 +139,7 @@ a.active {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: #ffffff;
     padding: 12px 20px;
-    z-index: 100;
+    z-index: 1;
     margin-top: 4%;
     width: 20%;
 }
@@ -252,7 +252,7 @@ a.active {
         border-bottom: .1px solid #ffffff;
     }
     .dis{
-         position:absolute;
+        position:absolute;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         background-color: #222222;
         padding: 12px 20px;

@@ -139,19 +139,12 @@ select option{
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 25px;
 }
-  /* select option:hover {
-    background-color: red;
-    color: white;
-  } */
 
-  /* Style the select options when selected */
   select option:checked {
     background-color: #D4A80A;
     color: white;
   }
-  option:hover{
-    background-color: red;
-  }
+
 .changNum{
     display: flex;
     padding: 3% 0;
