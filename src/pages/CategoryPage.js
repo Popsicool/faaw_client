@@ -11,7 +11,7 @@ export const CategoryPage = () => {
     const collData = useContext(UserContext).cdata
     const navigate = useNavigate()
     const { name } = useParams()
-    const colItem = collData.find(obj => obj.name === name)
+    const colItem = collData?.find(obj => obj.name === name)
     const updateSelected = useContext(UserContext).updateSelected
     const addToCart = (props) => {
       props.cat = name
@@ -21,14 +21,14 @@ export const CategoryPage = () => {
 
   return (
     <div className="collections">
-            <div className='colTop' style={{backgroundImage: `url(${colItem.img})`}}>
+            <div className='colTop' style={{backgroundImage: `url(${colItem?.img})`}}>
             <div className='heroChild'>
               <p className='colTitle'>{name}</p>
             </div>
             </div>
             <div className='colBottom'>
               <div className='row gx-5'>
-                {colItem.items.map((each, index) => (
+                {colItem?.items.map((each, index) => (
                   <div className='col-md-4 colCard reveal' key={index}>
                     <div className='colCardTop'>
                       <img className='colCardTopImg' src={each.img[0]} alt="collImg"/>

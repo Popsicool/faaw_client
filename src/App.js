@@ -13,8 +13,10 @@ import { NotFound } from './pages/NotFound';
 import { Cart } from './pages/Cart';
 import { Checkselected } from './components/CheckSelected';
 import coldata from "./data/CollData"
+import styldata from './data/styleData';
 import { Loading } from './components/Loading';
 import { CategoryPage } from './pages/CategoryPage';
+// import { toast } from 'react-toastify';
 
 export const UserContext = createContext()
 function App() {
@@ -34,6 +36,7 @@ function App() {
   //           },
   // )
   const [cdata, setCdata] = useState(null)
+  const [cldata, setCldata] = useState(null)
   const [loading, setisloading] = useState(true)
   const [cart, setCart] = useState(localStorage.getItem("FaawCart") ? JSON.parse(localStorage.getItem("FaawCart")) : []);
   const updateCart = (props) => {
@@ -48,9 +51,12 @@ function App() {
   }
   useEffect(() => {
     localStorage.setItem("FaawCart", JSON.stringify(cart))
-    setCdata(coldata);
-    setisloading(false)
   }, [cart])
+  useEffect(() => {
+    setCdata(coldata);
+    setCldata(styldata)
+    setisloading(false)
+  }, [])
   // useEffect(() => {
   //   const url = "http://localhost:8000";
   //   fetch(url)
@@ -61,13 +67,26 @@ function App() {
   //     })
   //     .catch(error => {
   //       console.error("Error fetching categories:", error);
+  //       toast.error("Something went wrong, Please try again latter", {
+  //       position:"bottom-right"})
+  //       setisloading(false)
+  //     });
+  //   const url2 = "http://localhost:8000/collections"
+  //   fetch(url2)
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       setCldata(data);
+  //       setisloading(false)
+  //     })
+  //     .catch(error => {
+  //       console.error("Error fetching categories:", error);
   //       setisloading(false)
   //     });
   // }, [])
 
   return (
     <div className="App">
-      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata, setCart}}>
+      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata, setCart, cldata, loading, setisloading}}>
         <ToastContainer toastClassName="custom-toast"/>
         <ScrollToTop>
           <Layout>

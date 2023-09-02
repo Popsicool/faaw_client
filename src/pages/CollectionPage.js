@@ -5,11 +5,11 @@ import star from "../assets/stars.png"
 import star1 from "../assets/stars1.png"
 import { UserContext } from '../App'
 import { useNavigate } from 'react-router-dom';
-import styldata from '../data/styleData';
 
 
 export const CollectionPage = () => {
     const collData = useContext(UserContext).cdata
+    const styldata = useContext(UserContext).cldata
     const navigate = useNavigate()
     const { name } = useParams()
     const col = styldata.filter((item) => item.name === name);

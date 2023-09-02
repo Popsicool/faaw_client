@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
-import styldata from '../data/styleData';
+import { UserContext } from '../App'
 
 export const Collections = () => {
+  const styldata = useContext(UserContext).cldata
   return (
     <div className='row gx-3 collections'>
       {styldata?.map((each, idx) => (

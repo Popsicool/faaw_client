@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import "../styles/hero.css"
-import styldata from '../data/styleData';
+import { UserContext } from '../App'
 import heroBG from '../assets/heroBG.png'
 import piece from '../assets/piece.png'
 import { Link } from 'react-router-dom'
 export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const styldata = useContext(UserContext).cldata
   const heroData = [
     {
       backgroundImage: `url(${heroBG})`,
       text1: 'Confidence  .  Comfort  .  Class',
       text2: 'Saunter In For a Great Experience',
-      link: '/shop/Kaftans',
+      link: `/shop/Kaftan`,
     },
     {
       backgroundImage: `url(${piece})`,
       text1: 'Available Designs',
       text2: 'Let’s explore some of the pieces elegant individuals like you picked',
-      link: '/shop/Kaftans',
+      link: `/shop/Kaftan`,
     },
     // {
     //   backgroundImage: `url(${heroBG})`,
@@ -26,7 +27,7 @@ export const Hero = () => {
     //   buttonLabel: 'Button 3',
     // },
   ]
-  styldata.forEach(element => {
+  styldata?.forEach(element => {
       var newBG = {};
       newBG.backgroundImage =  `url(${element.img})`
       newBG.text1 = element.name + ' Collection'
