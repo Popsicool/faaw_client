@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import mastercard from "../assets/mastercard.png"
 import { toast } from 'react-toastify';
+import PaystackPop from '@paystack/inline-js'
+import { UserContext } from '../App'
+import { useNavigate } from 'react-router-dom';
+
 
 
 export const Checkout = (props) => {
+    const setCart = useContext(UserContext).setCart
     const cart = props.cart
     const price = props.price
     const [firstname, setFirstName] = useState("")
+    const [email, setEmail] = useState("")
     const [lastname, setLastName] = useState("")
     const [country, setCountry] = useState("")
     const [street, setStreet] = useState("")
@@ -14,9 +20,11 @@ export const Checkout = (props) => {
     const [paymentChoice, setPaymentChoice] = useState("card")
     const [terms, setTerms] = useState("")
     const [note, setNote] = useState("")
+    const navigate = useNavigate();
 
     const handleSubmit =  (e) => {
         e.preventDefault()
+        let regex = new RegExp(/\S+@\S+\.\S+/);
         if(!terms){
             toast.error("Agree to the terms and condition", {
             position:"bottom-right"})
@@ -29,6 +37,17 @@ export const Checkout = (props) => {
         }
         if (!firstname){
             toast.error("Please provide your First Name", {
+            position:"bottom-right"})
+            return
+        }
+        if (!email){
+            toast.error("Please provide your Email", {
+            position:"bottom-right"})
+            return
+        }
+        let isValid = regex.test(email);
+        if (!isValid){
+            toast.error("Invalid Email format", {
             position:"bottom-right"})
             return
         }
@@ -52,6 +71,47 @@ export const Checkout = (props) => {
             position:"bottom-right"})
             return
         }
+        var handler = PaystackPop.setup({
+            key: 'pk_test_55c5062aab46e116b0d38175f3d30f57f888c0e8', // Replace with your public key
+            email: email,
+            amount: price * 100, // the amount value is multiplied by 100 to convert to the lowest currency unit
+            currency: 'NGN', // Use GHS for Ghana Cedis or USD for US Dollars
+            // ref: 'YOUR_REFERENCE', // Replace with a reference you generated
+            callback: function(response) {
+            //this happens after the payment is completed successfully
+                // var reference = response.reference;
+                toast.success("Payment Succesful, Your goods will soon be ready for shipping", {
+                    position:"bottom-right"})
+                // const url = "http://localhost:8000/checkout";
+                // var myHeaders = new Headers();
+                // myHeaders.append('Content-Type', 'application/json');
+                // var raw = JSON.stringify({
+                // firstname,
+                // lastname,
+                // email,
+                // country,
+                // street,
+                // town,
+                // reference,
+                // note,
+                // amount: price,
+                // });
+                // var requestOptions = {
+                // method: 'POST',
+                // headers: myHeaders,
+                // body: raw,
+                // };
+                // fetch(url, requestOptions)
+                setCart([])
+                navigate('/', { replace: true });
+                // Make an AJAX call to your server with the reference to verify the transaction
+            },
+            onClose: function() {
+                toast.error("Payment Cancelled", {
+                    position:"bottom-right"})
+            },
+            });
+        handler.openIframe();
 
     }
   return (
@@ -79,6 +139,17 @@ export const Checkout = (props) => {
                             value={lastname}
                             onChange={(e) => setLastName(e.target.value)}
                             /><br/>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <div className='col'>
+                            <label className="lbl">Email*</label><br/>
+                            <input className='checkoutInput'
+                            placeholder='Your email address'
+                            value={email}
+                            type='email'
+                            onChange={(e) => setEmail(e.target.value)}
+                            />
                         </div>
                     </div>
                     <div className='row'>
