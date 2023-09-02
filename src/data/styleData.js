@@ -5,18 +5,21 @@ import trouser from "../assets/trouser.png"
 const styldata = [
     {
         "id": 1,
-        "name": "Aderinoye",
+        "name": "Aderinoye Collection",
         "img": kaftans,
+        "desc": "Shop the Aderinoye: collection Olori ebi ile awon Fiba"
     },
     {
         "id": 2,
-        "name": "Aderinola",
+        "name": "Aderinola Collection",
         "img": shirts,
+        "desc": "Shop the Aderinola: Na Fiba Sabi the meaning o"
     },
     {
         "id": 3,
-        "name": "Ariyike",
+        "name": "Ariyike Collection",
         "img": trouser,
+        "desc": "Shop the Ariyike: This one fit be Fiba Grandma, I no sabi"
     },
     // {
     //     "id": 4,

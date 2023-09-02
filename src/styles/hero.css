@@ -12,7 +12,7 @@
     background-color: #E3D081;
 }
 .heroParent {
-  background-image: url("../assets/heroBG.png");
+  /* background-image: url("../assets/heroBG.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,23 +29,29 @@
   background-color: rgba(128, 128, 128, 0.5);
   /* background-color: rgba(189, 162, 162, 0.5);  */
 }
+.heroInner{
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .conf{
   font-family: Poppins;
   font-size: 60px;
   font-weight:bolder;
   /* line-height: 90px; */
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   color: #FFFFFF;
 
 }
 .saunt{
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   /* line-height: 60px; */
   letter-spacing: 0em;
-  text-align: left;
+  /* text-align: left; */
   color: #D9D9D9;
 
 }
