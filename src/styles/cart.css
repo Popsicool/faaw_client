@@ -156,6 +156,8 @@
 	border: 1px solid #ECDBCB;
 	border-radius: 15px;
 	margin-bottom: 30%;
+}
+.tWrapper{
 	overflow-x:auto;
 	overflow-y:hidden;
 }
@@ -252,15 +254,6 @@
 	border-radius: 15px;
 
 }
-/* .fAl{
-	width: 70%;
-} */
-/* .lN{
-	text-align: end;
-} */
-/* .lNT{
-	text-align: start;
-} */
 .checkoutTextArea{
 	height: 60%;
 }
@@ -418,10 +411,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.itemImgCont {
-		height: 80%;
-		/* width: 70%; */
-	}
 	.tableP0{
 		font-size: 20px;
 	}
