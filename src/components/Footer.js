@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState} from 'react'
 import { NavLink } from "react-router-dom"
 // import fb from "../assets/fb.png"
 import wa from "../assets/wa.png"
@@ -6,8 +6,35 @@ import tw from "../assets/tw.png"
 import ins from "../assets/ins.png"
 import dly from "../assets/dly.png"
 import pym from "../assets/pym.png"
+import { toast } from 'react-toastify';
 import "../styles/footer.css"
 export const Footer = () => {
+  const [email, setEmail]= useState("")
+  const handleSubmit = (e) => {
+    e.preventDefault()
+        let regex = new RegExp(/\S+@\S+\.\S+/);
+        let isValid = regex.test(email);
+        if (!isValid){
+          toast.error("Provide Email type Only", {
+            position:"bottom-right"})
+            return
+        }
+    // const url = "http://localhost:8000/subscribe";
+    // var myHeaders = new Headers();
+    // myHeaders.append('Content-Type', 'application/json');
+    // var raw = JSON.stringify({
+    //   email,
+    // });
+    // var requestOptions = {
+    // method: 'POST',
+    // headers: myHeaders,
+    // body: raw,
+    // };
+    // fetch(url, requestOptions)
+    toast.success("Thank you for subscribing", {
+            position:"bottom-right"})
+    setEmail('')
+  }
   return (
     <div>
       <footer>
@@ -21,10 +48,13 @@ export const Footer = () => {
             </div>
           </div>
           <div className='col-md-5'>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className=''>
                 <input
                   placeholder='Email address'
+                  value={email}
+                  type='email'
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div>
