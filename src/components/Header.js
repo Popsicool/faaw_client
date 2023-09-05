@@ -11,13 +11,9 @@ import { UserContext } from '../App'
 export const Header = () => {
     const cart = useContext(UserContext).cart
     const coldata = useContext(UserContext).cdata
+    const price = useContext(UserContext).price
     const [showShop, setShowShop] = useState(false)
     const [open, setOpen] = useState(false)
-
-    let price = 0;
-    cart.forEach(element => {
-        price += element.new_price * element.quantity_choice
-    });
     const offAll = () => {
         setShowShop(false)
     }

@@ -1,10 +1,11 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useRef } from 'react'
 import mastercard from "../assets/mastercard.png"
 import { toast } from 'react-toastify';
 import PaystackPop from '@paystack/inline-js'
 import { UserContext } from '../App'
 import { useNavigate } from 'react-router-dom';
-
+import Receipt from './Receipt';
+import {PDFDownloadLink } from '@react-pdf/renderer';
 
 
 export const Checkout = (props) => {
@@ -12,6 +13,7 @@ export const Checkout = (props) => {
     const cart = props.cart
     const price = props.price
     const [firstname, setFirstName] = useState("")
+    const [refe, setReference] = useState("")
     const [email, setEmail] = useState("")
     const [lastname, setLastName] = useState("")
     const [country, setCountry] = useState("")
@@ -21,6 +23,8 @@ export const Checkout = (props) => {
     const [terms, setTerms] = useState("")
     const [note, setNote] = useState("")
     const navigate = useNavigate();
+    const downloadLinkRef = useRef();
+    const date = new Date().toLocaleDateString();
 
     const handleSubmit =  (e) => {
         e.preventDefault()
@@ -79,10 +83,22 @@ export const Checkout = (props) => {
             // ref: 'YOUR_REFERENCE', // Replace with a reference you generated
             callback: function(response) {
             //this happens after the payment is completed successfully
-                // var reference = response.reference;
+                var reference = response.reference;
+                setReference(reference)
                 toast.success("Payment Succesful, Your goods will soon be ready for shipping", {
                     position:"bottom-right"})
                 // const url = "http://localhost:8000/checkout";
+                // let items = []
+                // cart.forEach(element => {
+                // items.push({
+                //     "id": 1,
+                //     "name": element.name,
+                //     "colour": element.color_choice,
+                //     "quantity": element.quantity_choice,
+                //     "size": element.size_choice,
+                //     "price": element.new_price
+                //     })
+                // });
                 // var myHeaders = new Headers();
                 // myHeaders.append('Content-Type', 'application/json');
                 // var raw = JSON.stringify({
@@ -95,6 +111,7 @@ export const Checkout = (props) => {
                 // reference,
                 // note,
                 // amount: price,
+                // items,
                 // });
                 // var requestOptions = {
                 // method: 'POST',
@@ -102,9 +119,10 @@ export const Checkout = (props) => {
                 // body: raw,
                 // };
                 // fetch(url, requestOptions)
+                const a = document.querySelector('#dload')
+                a.click()
                 setCart([])
                 navigate('/', { replace: true });
-                // Make an AJAX call to your server with the reference to verify the transaction
             },
             onClose: function() {
                 toast.error("Payment Cancelled", {
@@ -119,7 +137,6 @@ export const Checkout = (props) => {
         <form onSubmit={handleSubmit}>
             <div className='emptyBlack'></div>
             <div className='eCartBody'>
-                {/* <form> */}
                 <p className='cartCart'>Checkout</p>
                 <p className='dAdd'>Deliver Address</p>
                 <hr/>
@@ -236,10 +253,16 @@ export const Checkout = (props) => {
                     <p className='tory'>Note: all personal data you give us will be used to process your order, Support your experience throughout this website, and for other purposes described in our <span className='cl tory2'>Privacy and Policy</span></p>
                     <input type="checkbox" id="chBox" className='checkoutRadio' onChange={(e) => setTerms(e.target.value)}/><label htmlFor="chBox" className='tory'>I have read and agree to the website <span className='cl tory2'>terms and condition</span></label>
                     <button className='generateBtn' >Place Order</button>
-                    {/* </form> */}
+
                 </div>
             </div>
         </form>
+        <a href={downloadLinkRef} style={{ display: 'none' }}>Download</a>
+        <PDFDownloadLink style={{visibility:'none'}}  document={<Receipt date= {date} name={firstname} cart={cart} refNum={refe} price ={price.toLocaleString()}/>} fileName="faaw_receipt.pdf">
+        {({ blob, url, loading, error }) =>
+          loading ? 'Loading document...' : <p id="dload">'Download PDF'</p>
+        }
+      </PDFDownloadLink>
     </div>
   )
 }

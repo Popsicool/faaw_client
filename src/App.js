@@ -45,6 +45,10 @@ function App() {
   const deleteItem = (props) => {
     setCart(cart.filter((item, index) => index !== props))
   }
+  let price = 0;
+    cart.forEach(element => {
+        price += element.new_price * element.quantity_choice
+    });
   const updateSelected = (prop) => {
 
     setSelected(prop)
@@ -86,7 +90,7 @@ function App() {
 
   return (
     <div className="App">
-      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata, setCart, cldata, loading, setisloading}}>
+      <UserContext.Provider value={{selected, updateSelected, cart, updateCart, deleteItem, cdata, setCart, cldata, loading, setisloading, price}}>
         <ToastContainer toastClassName="custom-toast"/>
         <ScrollToTop>
           <Layout>
