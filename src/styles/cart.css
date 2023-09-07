@@ -3,9 +3,10 @@
 	background-color: #232323;
 	display: grid;
 	place-items: end;
-    color:#ffffff
+	color: #ffffff;
 }
-.sCart, .eCartBody {
+.sCart,
+.eCartBody {
 	width: 100%;
 	height: 100%;
 	padding-bottom: 30%;
@@ -13,18 +14,18 @@
 .shoppingCartDiv {
 	display: flex;
 	justify-content: space-between;
-    border-bottom: 1px solid #ECDBCB;
+	border-bottom: 1px solid #ecdbcb;
 	margin: 0% 10% 5% 10%;
 }
-.shoppingCartText, .times{
-    font-family: Poppins;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 45px;
+.shoppingCartText,
+.times {
+	font-family: Poppins;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 45px;
 	padding: 10% 0% 5% 0%;
-    letter-spacing: 0em;
-    text-align: left;
-
+	letter-spacing: 0em;
+	text-align: left;
 }
 .times,
 .deleteItem {
@@ -35,7 +36,7 @@
 	justify-content: space-between;
 	padding: 3% 10% 0% 10%;
 }
-.itemRowCol1{
+.itemRowCol1 {
 	display: flex;
 	width: 40%;
 	padding: 0;
@@ -49,11 +50,11 @@
 	height: 100%;
 	border-radius: 15px;
 }
-.itemRowText{
+.itemRowText {
 	width: 70%;
 	padding-left: 10%;
 }
-.itemRT1{
+.itemRT1 {
 	font-family: Inter;
 	font-size: 18px;
 	font-weight: 300;
@@ -61,7 +62,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.itemRT2{
+.itemRT2 {
 	font-family: Inter;
 	font-size: 20px;
 	font-weight: 400;
@@ -90,22 +91,21 @@
 }
 .cartBoxBtn,
 .noItemBtn {
-	border: 1px solid #E3D081;
+	border: 1px solid #e3d081;
 	border-radius: 10px;
 	margin: 0% 5% 2% 5%;
 	background-color: #3a3a3a;
-	color: #E3D081;
+	color: #e3d081;
 	padding: 1%;
 	width: 60%;
 	font-family: Inter;
 	font-size: 2rem;
 	font-weight: 400;
 	line-height: 48px;
-
 }
 .cartBoxBtn2,
 .noItemBtn {
-	background-color: #E3D081;
+	background-color: #e3d081;
 	color: #000000;
 }
 .noItemBtn {
@@ -125,49 +125,46 @@
 	letter-spacing: 0em;
 }
 
-
-
-
 /* Cart Edit */
-.eCart{
-	background-color: #3A3A3A;
+.eCart {
+	background-color: #3a3a3a;
 	text-align: left;
 	justify-content: left;
 	color: #ffffff;
 }
-.cartCart{
+.cartCart {
 	font-family: Poppins;
 	font-size: 50px;
 	font-weight: 500;
 	line-height: 75px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #E3D081B2;
+	color: #e3d081b2;
 	padding: 2% 0;
 }
-.emptyBlack{
+.emptyBlack {
 	background-color: #232323;
 	height: 70px;
 }
-.eCartBody{
+.eCartBody {
 	padding: 0.3% 5%;
 }
-.tableWrapper{
-	border: 1px solid #ECDBCB;
+.tableWrapper {
+	border: 1px solid #ecdbcb;
 	border-radius: 15px;
 	margin-bottom: 30%;
 }
-.tWrapper{
-	overflow-x:auto;
-	overflow-y:hidden;
+.tWrapper {
+	overflow-x: auto;
+	overflow-y: hidden;
 }
-.table{
+.table {
 	width: 100%;
 	color: #ffffff;
-	overflow-x:auto;
+	overflow-x: auto;
 	/* padding: 25%; */
 }
-.tableP0{
+.tableP0 {
 	font-family: Poppins;
 	font-size: 30px;
 	font-weight: 500;
@@ -175,7 +172,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.tableR{
+.tableR {
 	display: flex;
 }
 .itemImgCont2 {
@@ -184,10 +181,10 @@
 	height: 147px;
 	margin-right: 5%;
 }
-.tX{
+.tX {
 	margin-right: 15%;
 }
-.tableP{
+.tableP {
 	font-family: Poppins;
 	font-size: 22px;
 	font-weight: 500;
@@ -195,7 +192,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.tableP2{
+.tableP2 {
 	font-family: Poppins;
 	font-size: 20px;
 	font-weight: 500;
@@ -203,26 +200,26 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.product{
+.product {
 	text-align: center;
 }
-.sS{
-	color: #D4A80AB2;
+.sS {
+	color: #d4a80ab2;
 }
-.price{
-	color:#E3D081B2;
+.price {
+	color: #e3d081b2;
 }
 
-.pad{
+.pad {
 	padding-top: 25%;
 }
-.upC{
+.upC {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	/* text-align: end; */
 }
-.upC > button{
+.upC > button {
 	width: 20%;
 	height: 50px;
 	margin: 1% 5% 1% 0;
@@ -232,38 +229,44 @@
 	font-weight: 500;
 	line-height: 45px;
 	letter-spacing: 0em;
-	color:#000000;
-	background-color: #E3D081;
-
+	color: #000000;
+	background-color: #e3d081;
 }
 
-
 /* check out  */
-.dAdd{
+.dAdd {
 	font-family: Poppins;
 	font-size: 35px;
 	font-weight: 400;
 	line-height: 53px;
 	letter-spacing: 0em;
 }
-.checkoutInput, .checkoutInput:focus, .checkoutInput:active, .checkoutTextArea, .checkoutTextArea:focus, .checkoutTextArea:active{
+.checkoutInput,
+.checkoutInput:focus,
+.checkoutInput:active,
+.checkoutTextArea,
+.checkoutTextArea:focus,
+.checkoutTextArea:active {
 	height: 50px;
 	width: 100%;
 	height: 114px;
 	font-size: 2rem;
 	border-radius: 15px;
-
 }
-.checkoutTextArea{
+.checkoutTextArea,
+.checkoutTextArea:focus,
+.checkoutTextArea:active {
 	height: 60%;
 }
-.checkoutRadio, .checkoutRadio:focus, .checkoutRadio:active {
+.checkoutRadio,
+.checkoutRadio:focus,
+.checkoutRadio:active {
 	width: 50px;
 	height: 15px;
 	background-color: transparent;
 }
-.lbl{
-	color: #FFFFFFD4;
+.lbl {
+	color: #ffffffd4;
 	font-family: Poppins;
 	font-size: 35px;
 	font-weight: 500;
@@ -271,24 +274,24 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.checkoutBottom{
+.checkoutBottom {
 	background-color: #2c2c2c;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	padding: 5% 0 15% 0;
 }
-.checkoutBottomR{
-	background-color: #3A3A3A;
+.checkoutBottomR {
+	background-color: #3a3a3a;
 	width: 60%;
 	padding: 5%;
 }
-.fle{
+.fle {
 	display: flex;
 	justify-content: space-between;
 }
-.bankStuff{
-	background-color: #FFFFFF;
+.bankStuff {
+	background-color: #ffffff;
 	color: #000000;
 	width: 80%;
 	font-family: Poppins;
@@ -298,25 +301,25 @@
 	font-weight: 300;
 	text-align: center;
 }
-.cardOption{
+.cardOption {
 	width: 80%;
 }
-.guara2{
-	background-color: #3A3A3A;
+.guara2 {
+	background-color: #3a3a3a;
 }
-.bankStuff >button{
-	background-color: #E3D081B2;
+.bankStuff > button {
+	background-color: #e3d081b2;
 }
-.generateBtn{
-	width:80%;
-	background-color: #E3D081;
+.generateBtn {
+	width: 80%;
+	background-color: #e3d081;
 	padding: 2%;
 	border-radius: 15px;
 }
-.cl{
-	color: #E3D081B2;
+.cl {
+	color: #e3d081b2;
 }
-.yourOrder{
+.yourOrder {
 	font-family: Poppins;
 	padding-bottom: 10%;
 	font-size: 35px;
@@ -325,7 +328,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.yourProduct{
+.yourProduct {
 	font-family: Poppins;
 	font-size: 30px;
 	font-weight: 500;
@@ -333,7 +336,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.st1{
+.st1 {
 	font-family: Poppins;
 	font-size: 22px;
 	font-weight: 500;
@@ -341,7 +344,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.st2{
+.st2 {
 	font-family: Poppins;
 	font-size: 20px;
 	font-weight: 500;
@@ -350,7 +353,7 @@
 	text-align: left;
 }
 
-.nT{
+.nT {
 	font-family: Inter;
 	font-size: 20px;
 	font-weight: 400;
@@ -358,7 +361,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.nTT{
+.nTT {
 	font-family: Inter;
 	font-size: 25px;
 	font-weight: 400;
@@ -366,7 +369,7 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.tota{
+.tota {
 	font-family: Poppins;
 	font-size: 30px;
 	font-weight: 400;
@@ -374,16 +377,16 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.makeSure{
+.makeSure {
 	font-family: Poppins;
 	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 45px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #FFFFFFD4;
+	color: #ffffffd4;
 }
-.toT{
+.toT {
 	font-family: Poppins;
 	font-size: 22px;
 	font-weight: 500;
@@ -391,30 +394,29 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.sS2{
-	color: #E3D081B2;
+.sS2 {
+	color: #e3d081b2;
 }
-.tory{
+.tory {
 	font-family: Poppins;
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 45px;
 	letter-spacing: 0em;
 	text-align: left;
-
 }
-.tory2{
+.tory2 {
 	font-family: Poppins;
 	font-size: 1rem;
 	font-weight: 300;
-
 }
 
 @media only screen and (max-width: 600px) {
-	.tableP0{
+	.tableP0 {
 		font-size: 20px;
 	}
-	.tableP, .tableP2{
+	.tableP,
+	.tableP2 {
 		font-family: Poppins;
 		font-size: 15px;
 		font-weight: 500;
@@ -425,7 +427,7 @@
 	.itemImgCont {
 		width: 200px;
 	}
-	.upC > button{
+	.upC > button {
 		width: 40%;
 		height: 50px;
 		margin: 1% 5% 1% 0;
@@ -437,53 +439,73 @@
 	/* .plus2{
 		width:30%
 	} */
-	.itemImgCont2{
+	.itemImgCont2 {
 		padding-right: 20%;
 	}
-	.changNum2{
+	.changNum2 {
 		padding-top: 15%;
 	}
-	.cartCart{
+	.cartCart {
 		font-size: 2.5rem;
 	}
-	.dAdd, .yourOrder, .tota, .shoppingCartText{
+	.dAdd,
+	.yourOrder,
+	.tota,
+	.shoppingCartText {
 		font-size: 1.5rem;
 	}
-	.lbl, .yourProduct, .st1, .st2, .nT, .nTT, .makeSure, .guara2, .bankStuff > p, .tory, .noItm, .cartBoxBtn, .noItemBtn{
+	.lbl,
+	.yourProduct,
+	.st1,
+	.st2,
+	.nT,
+	.nTT,
+	.makeSure,
+	.guara2,
+	.bankStuff > p,
+	.tory,
+	.noItm,
+	.cartBoxBtn,
+	.noItemBtn {
 		font-size: 1rem;
 	}
-	.checkoutInput, .checkoutInput:focus, .checkoutInput:active, .checkoutTextArea, .checkoutTextArea:focus, .checkoutTextArea:active{
+	.checkoutInput,
+	.checkoutInput:focus,
+	.checkoutInput:active,
+	.checkoutTextArea,
+	.checkoutTextArea:focus,
+	.checkoutTextArea:active {
 		height: 50%;
 		font-size: 1rem;
 		border-radius: 5px;
 	}
-	.checkoutBottomR{
+	.checkoutBottomR {
 		width: 100%;
 	}
-	.generateBtn{
+	.generateBtn {
 		font-size: 16px;
 	}
-	.tory{
-		padding-top:5%;
+	.tory {
+		padding-top: 5%;
 		line-height: 20px;
 	}
-	.tory2{
-		font-size: .7rem;
+	.tory2 {
+		font-size: 0.7rem;
 	}
-	.itemRT1{
+	.itemRT1 {
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 22px;
 	}
-	.itemRT2{
+	.itemRT2 {
 		font-size: 1.2rem;
 		font-weight: 400;
 		line-height: 24px;
 	}
-	.itemRowCol1{
+	.itemRowCol1 {
 		width: 70%;
 	}
-	.cartBoxBottom > p{
+	.cartBoxBottom > p {
 		font-size: 1rem;
 	}
 }

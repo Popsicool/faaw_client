@@ -1,5 +1,44 @@
 .notFound{
     display: grid;
     place-items: center;
-    padding: 20%;
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 15%;
+    font-family: 'Poppins';
+}
+.nFBold{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.errBtn{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.Ebt{
+    background-color: #3A3A3AA1;
+    padding: 4%;
+    width: 100%;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.errorLink{
+    width: 40%;
+    padding: 2%;
+}
+.Ebt2{
+    background-color: #ffffff;
+    color: #3A3A3AA1;
+    font-weight: bolder;
+}
+@media only screen and (max-width: 600px) {
+    .nFBold{
+        font-size: 1.3rem;
+    }
+    .Ebt{
+        border-radius: 5px;
+    }
+    .errBtn{
+        width: 100%;
+    }
 }
